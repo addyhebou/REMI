@@ -1,0 +1,29 @@
+.App{
+  padding: 30px 40px;
+}
+
+.GoalArray{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1{
+  font-weight: lighter;
+  font-size: 64px;
+}
+
+.Task{
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  margin: 15px 40px;
+  padding: 5px;
+  text-align: center;
+}
+
+.Title{
+  background-color: beige;
+  border-radius: 15px;
+  margin: 15px 40px;
+  padding: 15px;
+  text-align: center;
+}
