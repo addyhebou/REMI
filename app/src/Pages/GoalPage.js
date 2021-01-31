@@ -21,9 +21,9 @@ export default class GoalPage extends Component {
                     <h1>{this.state.title}</h1>
                     <h2 className = "Task">{this.state.task}</h2>
                     {this.state.tasks.map((task) => {
-                    return (
-                        <div className = "Task"><h2>{task}</h2></div>
-                    )
+                        return (
+                            <div className = "Task"><h2>{task}</h2></div>
+                        )
                     })}
                 </div>
             )

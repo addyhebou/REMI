@@ -31,13 +31,20 @@ export default class GoalSet extends Component {
     render() {
         return (
             <div>
-                <Link to = {{
-                    pathname: "/goal",
-                    state: {
-                        title: this.props.title,
-                        tasks: this.state.tasks,
-                    }
-                }}>
+                <Link 
+                    style={{
+                        textDecoration: 'none', 
+                        color: 'black',
+                    }}
+                    to = {{
+                        pathname: "/goal",
+                        state: {
+                            title: this.props.title,
+                            tasks: this.state.tasks,
+                        }
+                    }}
+                    className = "link"
+                >
                 <h2 className = "Title" style = {{backgroundColor: "#"+this.state.backgroundColor}}>{this.state.title}</h2>
                 </Link>
                 {this.state.tasks.map((task) => {
