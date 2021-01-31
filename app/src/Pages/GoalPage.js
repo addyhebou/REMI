@@ -10,7 +10,14 @@ export default class GoalPage extends Component {
         this.state = {
             title: this.props.location.state.title,
             tasks: this.props.location.state.tasks,
+            displaySteps: false,
         }
+    }
+
+    displaySteps = () =>{
+        this.setState({
+            displaySteps: !this.state.displaySteps,
+        });
     }
     
 
@@ -24,14 +31,15 @@ export default class GoalPage extends Component {
                     {this.state.tasks.map((task) => {
                         return (
                             <div>
-                                <h2 className = "Task">{task}</h2>
-                                <Steps className = "Steps">
-                                    <div>Hi</div>
-                                    <div>Hi</div>
-                                    <div>Hi</div>
-                                    <div>Hi</div>
-                                    <div>Hi</div>
-                                </Steps>
+                                <div className = "Task">
+                                    <h2 onClick={this.displaySteps.bind(null, !this.state.displaySteps)}>{task}</h2>
+                                </div>
+                                { this.state.displaySteps && 
+                                    (<Steps className = "Steps">
+                                        <div>Hi</div>
+                                        <div>Hi</div>
+                                    </Steps>)
+                                }
                             </div>
                         )
                     })}
