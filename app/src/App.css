@@ -12,13 +12,17 @@ h1{
   font-size: 64px;
 }
 
+Link{
+  text-decoration: none;
+}
+
 
 .Task{
-  background-color: #e0e0e0;
+  background-color: #f5f5f5;
   border-radius: 15px;
   box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
   margin: 15px 40px;
-  padding: 5px;
+  padding: 1px 0px ;
   text-align: center;
 }
 
