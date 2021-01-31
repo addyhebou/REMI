@@ -12,9 +12,11 @@ h1{
   font-size: 64px;
 }
 
+
 .Task{
-  background-color: #F5F5F5;
+  background-color: #e0e0e0;
   border-radius: 15px;
+  box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
   margin: 15px 40px;
   padding: 5px;
   text-align: center;
