@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Steps from '../Components/Steps'
 import '../App.css';
 
 export default class GoalPage extends Component {
@@ -22,7 +23,16 @@ export default class GoalPage extends Component {
                     <h2 className = "Task">{this.state.task}</h2>
                     {this.state.tasks.map((task) => {
                         return (
-                            <div className = "Task"><h2>{task}</h2></div>
+                            <div>
+                                <h2 className = "Task">{task}</h2>
+                                <Steps className = "Steps">
+                                    <div>Hi</div>
+                                    <div>Hi</div>
+                                    <div>Hi</div>
+                                    <div>Hi</div>
+                                    <div>Hi</div>
+                                </Steps>
+                            </div>
                         )
                     })}
                 </div>

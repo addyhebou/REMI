@@ -7,7 +7,7 @@ export default class Index extends Component {
             <div>
                 <h1>2021 <strong>Goals</strong></h1>
                 <div className = "GoalArray">
-                    <GoalSet title = "Music Tech CEO" color = "AFD8EF">
+                    <GoalSet className = "GoalSet" title = "Music Tech CEO" color = "AFD8EF">
                         <div>Read Books</div>
                         <div>YouTube/Beatstars Asset</div>
                         <div>CS Degree</div>
