@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Steps from '../Components/Steps'
-import '../App.css';
+import '../App.scss';
 
 export default class GoalPage extends Component {
 

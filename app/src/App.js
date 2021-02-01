@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import './Pages/Index';
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Index from './Pages/Index'

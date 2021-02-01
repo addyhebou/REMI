@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import '../App.css';
+import '../App.scss';
 
 export default class GoalSet extends Component {
     constructor(props) {
@@ -10,6 +10,7 @@ export default class GoalSet extends Component {
             title: this.props.title,
             backgroundColor: this.props.color,
             tasks: [],
+            randomYPosition: 0,
         };
     };
 
@@ -17,20 +18,28 @@ export default class GoalSet extends Component {
         let i = 0;
         const temp = [];
         for (i = 0; i < this.props.children.length; ++i){
-            temp.push(this.props.children[i].props.children);
+            temp.push(this.props.children[i].props.children); // Adding all children to temp
         }
+        const num = Math.floor((Math.random() * 10) + 1) // Getting random val to add to y position
         this.setState(
-            {tasks: temp}
+            {
+                tasks: temp,
+                randomYPosition: num,
+            }
         )
+        console.log("The dismount position y position is " + this.state.randomYPosition
+        + ". But num is " + num);
     }
+
 
     componentDidMount = () =>{
         this.updateTasks()
     }
 
+
     render() {
         return (
-            <div>
+            <div className = "Floater">
                 <Link 
                     style={{
                         textDecoration: 'none', 
@@ -44,7 +53,7 @@ export default class GoalSet extends Component {
                         }
                     }}
                 >
-                <h2 className = "Title" style = {{backgroundColor: "#"+this.state.backgroundColor}}>{this.state.title}</h2>
+                <h2 className = "Title" style = {{backgroundColor: "#"+this.state.backgroundColor, transform:"translate(0, " + this.state.randomYPosition + "px)"}}>{this.state.title}</h2>
                 </Link>
                 {this.state.tasks.map((task) => {
                     return <div className = "Task"><h2>{task}</h2></div>
