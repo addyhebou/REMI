@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/2021-Goals/static/css/main.fb0055aa.chunk.css",
+    "main.js": "/2021-Goals/static/js/main.dc433ba2.chunk.js",
+    "main.js.map": "/2021-Goals/static/js/main.dc433ba2.chunk.js.map",
+    "runtime-main.js": "/2021-Goals/static/js/runtime-main.aed6c00a.js",
+    "runtime-main.js.map": "/2021-Goals/static/js/runtime-main.aed6c00a.js.map",
+    "static/js/2.f8074ed1.chunk.js": "/2021-Goals/static/js/2.f8074ed1.chunk.js",
+    "static/js/2.f8074ed1.chunk.js.map": "/2021-Goals/static/js/2.f8074ed1.chunk.js.map",
+    "static/js/3.0daf495b.chunk.js": "/2021-Goals/static/js/3.0daf495b.chunk.js",
+    "static/js/3.0daf495b.chunk.js.map": "/2021-Goals/static/js/3.0daf495b.chunk.js.map",
+    "index.html": "/2021-Goals/index.html",
+    "static/css/main.fb0055aa.chunk.css.map": "/2021-Goals/static/css/main.fb0055aa.chunk.css.map",
+    "static/js/2.f8074ed1.chunk.js.LICENSE.txt": "/2021-Goals/static/js/2.f8074ed1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aed6c00a.js",
+    "static/js/2.f8074ed1.chunk.js",
+    "static/css/main.fb0055aa.chunk.css",
+    "static/js/main.dc433ba2.chunk.js"
+  ]
+}
