@@ -12,7 +12,8 @@ function App() {
         <Switch>
           <Route exact path = "/" component = { Index }/>
           <Route exact path = "/goal" component = { GoalPage }/>
-          <Route component = { Error }/>
+          <Route component = { Index }/>
+          {/* <Route component = { Error }/> */}
           <Redirect to = "/404"/>
         </Switch>
       </Router>
