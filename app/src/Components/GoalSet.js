@@ -27,8 +27,6 @@ export default class GoalSet extends Component {
                 randomYPosition: num,
             }
         )
-        console.log("The dismount position y position is " + this.state.randomYPosition
-        + ". But num is " + num);
     }
 
 

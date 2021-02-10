@@ -1,6 +1,20 @@
 import React, { Component } from 'react'
-import Steps from '../Components/Steps'
+import Step from '../Components/Step'
+import Goals from '../Data/Goals.json'
 import '../App.scss';
+
+let title = "Music Creator";
+let task = "Producer Brand";
+
+// (Goals[title]["Tasks"][task]["Steps"]).map((step) =>{
+//     console.log(step);
+// })
+
+
+// {console.log(Goals[this.state.title]["Tasks"][this.state.task]["Steps"][0])};
+
+
+
 
 export default class GoalPage extends Component {
 
@@ -18,33 +32,46 @@ export default class GoalPage extends Component {
         this.setState({
             displaySteps: !this.state.displaySteps,
         });
+        this.state.displaySteps ? (
+            console.log("Display on")
+        ) : (
+            console.log("Display off")
+        );
     }
-    
 
     render() {
-        console.log("Tasks are " + this.state.tasks + ". The type is " + typeof this.state.tasks
-        + ". Item 1 in tasks is " + this.state.tasks[0] + ".")
         return (
-                <div>
-                    <h1>{this.state.title}</h1>
-                    <h2 className = "Task">{this.state.task}</h2>
-                    {this.state.tasks.map((task) => {
-                        return (
-                            <div>
-                                <div className = "Task">
-                                    <h2 onClick={this.displaySteps.bind(null, !this.state.displaySteps)}>{task}</h2>
-                                </div>
-                                { this.state.displaySteps && 
-                                    (<Steps className = "Steps">
-                                        <div>Hi</div>
-                                        <div>Hi</div>
-                                    </Steps>)
-                                }
+            <div>
+                <h1>{this.state.title}</h1>
+                <h2 className = "Task">{this.state.task}</h2>
+                {this.state.tasks.map((task) => {
+                    // {console.log(Goals[this.state.title]["Tasks"][task]["Steps"])};
+                    return (
+                        <div>
+                            <div className = "Task">
+                                <h2 onClick={this.displaySteps.bind(null, !this.state.displaySteps)}>{task}</h2>
                             </div>
-                        )
-                    })}
-                </div>
-            )
+                            { this.state.displaySteps && 
+                                <div>
+                                    {Goals[this.state.title]["Tasks"][task]["Steps"].map((step) =>
+                                        {
+                                            <Step>{step}</Step>
+                                        }
+                                    )}
+                                </div>
+                            }
+                        </div>
+                    )
+                })}
+            </div>
+        )
     }
 }
 
+
+{/* // {if (this.state.displaySteps){ */}
+{/* //                                         Goals[this.state.title]["Tasks"][task]["Steps"]).map((step) =>{
+//                                             return <Step>{step}</Step>
+//                                         }
+//                                     }}
+ */}

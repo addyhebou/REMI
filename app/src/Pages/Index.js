@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import GoalSet from '../Components/GoalSet'
 
+
+
+
 export default class Index extends Component {
     render() {
         return (

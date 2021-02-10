@@ -1,0 +1,28 @@
+{
+    "Music Creator": {
+        "Tasks":
+            {
+                "Industry Quality Producer" : {
+                    "Steps": [
+                        "yeah1",
+                        "yeah2",
+                        "yeah3"
+                    ]
+                },
+                "Producer Brand" : {
+                    "Steps": [
+                        "yeah4",
+                        "yeah5",
+                        "yeah6"
+                    ]
+                },
+                "Vocal Mixing Skills" : {
+                    "Steps": [
+                        "yeah7",
+                        "yeah8",
+                        "yeah9"
+                    ]
+                }
+            }
+    }
+}
