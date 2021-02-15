@@ -33,7 +33,8 @@ export default class Index extends Component {
                         <div>Invest</div>
                         <div>Live Below Means</div>
                         <div>Scholarships</div>
-                    </GoalSet>
+                    <div>Side Businesses</div>
+</GoalSet>
                     <GoalSet title = "Personal Goals" color = "d1a9d4">
                         <div>Good Sleep</div>
                         <div>3 Meals</div>
