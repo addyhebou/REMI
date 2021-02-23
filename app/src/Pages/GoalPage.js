@@ -55,7 +55,9 @@ export default class GoalPage extends Component {
                                 <div>
                                     {Goals[this.state.title]["Tasks"][task]["Steps"].map((step) =>
                                         {
-                                            <Step>{step}</Step>
+                                            return (
+                                                <Step>{step}</Step>
+                                            )
                                         }
                                     )}
                                 </div>

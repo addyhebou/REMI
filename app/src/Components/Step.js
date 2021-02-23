@@ -11,7 +11,7 @@ export default class Step extends Component {
     
     render() {
         return (
-            <div className = "Task">
+            <div className = "Step">
                 <h2>{this.state.taskName}</h2>
             </div>
         )

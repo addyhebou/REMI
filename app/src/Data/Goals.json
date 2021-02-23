@@ -1,26 +1,154 @@
 {
+    "Music Tech CEO": {
+        "Tasks":
+            {
+                "CS Degree" : {
+                    "Steps": [
+                        "Attend All Classes",
+                        "Clear Agenda Daily",
+                        "Focus on Front End Classes",
+                        "Study Daily"
+                    ]
+                },
+                "Intern/Work" : {
+                    "Steps": [
+                        "Build Portfolio",
+                        "Master React JS",
+                        "Practice Front End Exercises",
+                        "Apply to Jobs Everyday"
+                    ]
+                },
+                "Stellar Portfolio" : {
+                    "Steps": [
+                        "Remake Common Projects",
+                        "Work on JARVIS"
+                    ]
+                },
+                "Develop SoundGood" : {
+                    "Steps": [
+                        "Stay on Top of Software Engineering"
+                    ]
+                }
+            }
+    },
+
+    "Critically Acclaimed Performer": {
+        "Tasks":
+            {
+                "Strasberg Training" : {
+                    "Steps": [
+                        "Practice Exercises",
+                        "Watch TV Shows/Movies"
+                    ]
+                },
+                "Film Roles" : {
+                    "Steps": [
+                        "Check Backstage for Roles"
+                    ]
+                },
+                "Sing a Lot" : {
+                    "Steps": [
+                        "Daily Vocal Exercises"
+                    ]
+                },
+                "Dance a Lot" : {
+                    "Steps": [
+                        "Stay At It"
+                    ]
+                }
+            }
+    },
+
     "Music Creator": {
         "Tasks":
             {
                 "Industry Quality Producer" : {
                     "Steps": [
-                        "yeah1",
-                        "yeah2",
-                        "yeah3"
+                        "Sound Design Tutorials",
+                        "Reverse Engineer Songs",
+                        "Type Beat Tutorials",
+                        "Master Logic Pro X",
+                        "Lock Vocal Mixing",
+                        "Read Songwriting Books"
                     ]
                 },
                 "Producer Brand" : {
                     "Steps": [
-                        "yeah4",
-                        "yeah5",
-                        "yeah6"
+                        "Collab With Writers/Artists",
+                        "Post IG Video Weekly",
+                        "Post Tik Tok Videos 2x A Week"
                     ]
                 },
                 "Vocal Mixing Skills" : {
                     "Steps": [
-                        "yeah7",
-                        "yeah8",
-                        "yeah9"
+                        "Read Engineering Books",
+                        "Video Tutorials"
+                    ]
+                }
+            }
+    },
+
+    "Financial Freedom": {
+        "Tasks":
+            {
+                "Max Streams of Income" : {
+                    "Steps": [
+                        "Apply 3 Jobs / Day",
+                        "Work 20+ Hours a Week",
+                        "Post Weekly on YouTube",
+                        "Guitar Lessons",
+                        "Custom Beats"
+                    ]
+                },
+                "Invest" : {
+                    "Steps": [
+                        "Index Funds",
+                        "Learn About More Value Investing",
+                        "60% of Income In Business and Funds",
+                        "Stock in Companies I Know"
+                    ]
+                },
+                "Live Below Means" : {
+                    "Steps": [
+                        "Hold a Strict and Observant Budget"
+                    ]
+                },
+                "Scholarships" : {
+                    "Steps":[
+                        "February to April are Prime Months"
+                    ]
+                }
+            }
+    },
+    "Personal Goals": {
+        "Tasks":
+            {
+                "Good Sleep" : {
+                    "Steps": [
+                        "Sleep & Wake at Consistent Times",
+                        "Control Light Exposure",
+                        "Exercise Consistently"
+                    ]
+                },
+                "Personal Fitness" : {
+                    "Steps": [
+                        "Workout 3+ Days/Week",
+                        "Eat 3 Meals a Day",
+                        "Stock on High Protein"
+                    ]
+                },
+                "God" : {
+                    "Steps":[
+                        "Gospel Music Nutrition",
+                        "Attend Church 2x Month",
+                        "Pray in Thanks & Service"
+                    ]
+                },
+
+                "Miina" : {
+                    "Steps":[
+                        "Reassure Her Daily",
+                        "Make Solo Convo Time"
                     ]
                 }
             }

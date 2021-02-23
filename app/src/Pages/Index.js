@@ -11,11 +11,10 @@ export default class Index extends Component {
                 <h1>2021 <strong>Goals</strong></h1>
                 <div className = "GoalArray">
                     <GoalSet className = "GoalSet" title = "Music Tech CEO" color = "AFD8EF">
-                        <div>Read Books</div>
-                        <div>YouTube/Beatstars Asset</div>
+                        <div>Develop SoundGood</div>
                         <div>CS Degree</div>
-                        <div>Intern/Start-Up</div>
-                        <div>Solo Projects</div>
+                        <div>Intern/Work</div>
+                        <div>Stellar Portfolio</div>
                     </GoalSet>
                     <GoalSet title = "Critically Acclaimed Performer" color = "F59393">
                         <div>Strasberg Training</div>
@@ -29,16 +28,14 @@ export default class Index extends Component {
                         <div>Vocal Mixing Skills</div>
                     </GoalSet>
                     <GoalSet title = "Financial Freedom" color = "C0EFAF">
-                        <div>Job</div>
+                        <div>Max Streams of Income</div>
                         <div>Invest</div>
                         <div>Live Below Means</div>
                         <div>Scholarships</div>
-                    <div>Side Businesses</div>
-</GoalSet>
+                    </GoalSet>
                     <GoalSet title = "Personal Goals" color = "d1a9d4">
                         <div>Good Sleep</div>
-                        <div>3 Meals</div>
-                        <div>Workout</div>
+                        <div>Personal Fitness</div>
                         <div>God</div>
                         <div>Miina</div>
                     </GoalSet>
