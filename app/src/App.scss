@@ -1,67 +1,148 @@
-.App{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 30px 40px;
-  text-align: center;
-  height: 100vh;
+@media only screen and (max-width: 768px){
+  .App{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 40px;
+    text-align: center;
+    height: 100vh;
+  }
+
+  $randomNumber: random(3);
+
+  .Floater{
+    animation-name: floating;
+    animation-duration: 5s;
+    // animation-duration: $randomNumber + s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+
+  @keyframes floating{
+    0% { transform: translate(0, 0px);}
+    50% { transform: translate(0, 15px);}
+    100% { transform: translate(0, -0px);}
+  }
+
+  .GoalArray{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .Task{
+  }
+
+  h1{
+    font-weight: lighter;
+    font-size: 64px;
+  }
+
+  .Loader{
+    height: 100vh;
+    width: 100%;
+  }
+
+  .Task{
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
+    display: none;
+    margin: 15px 40px;
+    padding: 1px 0px ;
+    text-align: center;
+  }
+
+  .Task_Mobile{
+    display: block;
+  }
+
+  .Step{
+    // background-color: #f5f5f5;
+    // border-radius: 15px;
+    // box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
+    // margin: 15px 40px;
+    // padding: 1px 0px ;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .Title{
+    background-color: beige;
+    border-radius: 15px;
+    margin: 15px 40px;
+    padding: 15px;
+    text-align: center;
+  }
 }
+@media only screen and (min-width: 769px){
+  .App{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 40px;
+    text-align: center;
+    height: 100vh;
+  }
 
-$randomNumber: random(3);
+  $randomNumber: random(3);
 
-.Floater{
-  animation-name: floating;
-  animation-duration: 5s;
-  // animation-duration: $randomNumber + s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
+  .Floater{
+    animation-name: floating;
+    animation-duration: 5s;
+    // animation-duration: $randomNumber + s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
 
 
-@keyframes floating{
-  0% { transform: translate(0, 0px);}
-  50% { transform: translate(0, 15px);}
-  100% { transform: translate(0, -0px);}
-}
+  @keyframes floating{
+    0% { transform: translate(0, 0px);}
+    50% { transform: translate(0, 15px);}
+    100% { transform: translate(0, -0px);}
+  }
 
-.GoalArray{
-  display: flex;
-  justify-content: space-evenly;
-}
+  .GoalArray{
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-h1{
-  font-weight: lighter;
-  font-size: 64px;
-}
+  h1{
+    font-weight: lighter;
+    font-size: 64px;
+  }
 
-.Loader{
-  height: 100vh;
-  width: 100%;
-}
+  .Loader{
+    height: 100vh;
+    width: 100%;
+  }
 
-.Task{
-  background-color: #f5f5f5;
-  border-radius: 15px;
-  box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
-  margin: 15px 40px;
-  padding: 1px 0px ;
-  text-align: center;
-}
+  .Task{
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
+    margin: 15px 40px;
+    padding: 1px 0px ;
+    text-align: center;
+  }
 
-.Step{
-  // background-color: #f5f5f5;
-  // border-radius: 15px;
-  // box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
-  // margin: 15px 40px;
-  // padding: 1px 0px ;
-  font-weight: normal;
-  text-align: center;
-}
+  .Step{
+    // background-color: #f5f5f5;
+    // border-radius: 15px;
+    // box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
+    // margin: 15px 40px;
+    // padding: 1px 0px ;
+    font-weight: normal;
+    text-align: center;
+  }
 
-.Title{
-  background-color: beige;
-  border-radius: 15px;
-  margin: 15px 40px;
-  padding: 15px;
-  text-align: center;
+  .Title{
+    background-color: beige;
+    border-radius: 15px;
+    margin: 15px 40px;
+    padding: 15px;
+    text-align: center;
+  }
+
 }

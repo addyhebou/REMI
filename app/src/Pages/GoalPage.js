@@ -43,12 +43,12 @@ export default class GoalPage extends Component {
         return (
             <div>
                 <h1>{this.state.title}</h1>
-                <h2 className = "Task">{this.state.task}</h2>
+                <h2 className = "Task Task_Mobile">{this.state.task}</h2>
                 {this.state.tasks.map((task) => {
                     // {console.log(Goals[this.state.title]["Tasks"][task]["Steps"])};
                     return (
                         <div>
-                            <div className = "Task">
+                            <div className = "Task Task_Mobile">
                                 <h2 onClick={this.displaySteps.bind(null, !this.state.displaySteps)}>{task}</h2>
                             </div>
                             { this.state.displaySteps && 
