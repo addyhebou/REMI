@@ -13,8 +13,8 @@ https://leetcode.com/discuss/general-discussion/319794/where-i-can-find-the-inte
 
 ## 📕 Books To Read
 
-# Music Tech CEO
-### Hard Skills
+## Music Tech CEO
+#### Hard Skills
 * Eloquent JavaScript: A Modern Introduction to Programming
 * JavaScript & JQuery: Interactive Front-End Web Development
 ### Soft Skills
