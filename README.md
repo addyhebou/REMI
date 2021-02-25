@@ -8,13 +8,13 @@
 6. Responsive Design (just show goals)✅
 7. Add SMART Goals
 
-### Interview Questions
+## Interview Questions
 https://leetcode.com/discuss/general-discussion/319794/where-i-can-find-the-interview-questions-for-front-end-developerengineer
 
 ## 📕 Books To Read
 
 ## Music Tech CEO
-#### Hard Skills
+### Hard Skills
 * Eloquent JavaScript: A Modern Introduction to Programming
 * JavaScript & JQuery: Interactive Front-End Web Development
 ### Soft Skills
@@ -23,7 +23,7 @@ https://leetcode.com/discuss/general-discussion/319794/where-i-can-find-the-inte
 * Never Eat Alone
 
 
-# Critically Accalaimed Perfomer
+## Critically Accalaimed Perfomer
 ### Hard Skills
 * The Lee Strasberg Method
 * The Method Acting Exercises Book
@@ -32,7 +32,7 @@ https://leetcode.com/discuss/general-discussion/319794/where-i-can-find-the-inte
 * The Talent Code
 * No Excuses
 
-# Music Creator
+## Music Creator
 ### Hard Skills
 * All You Need to Know About Music Business
 ### Soft Skills
@@ -41,7 +41,7 @@ https://leetcode.com/discuss/general-discussion/319794/where-i-can-find-the-inte
 * Never Eat Alone
 * No Excuses
 
-# Financial Freedom
+## Financial Freedom
 ### Hard Skills
 * Rich Dad, Poor Dad
 * The Millionaire Next Door
@@ -49,7 +49,7 @@ https://leetcode.com/discuss/general-discussion/319794/where-i-can-find-the-inte
 ### Soft Skills
 * Talent is Overrated
 
-# Personal Goals
+## Personal Goals
 ### Hard Skills
 ### Soft Skills
 * Talent is Overrated
