@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/2021-Goals/static/css/main.f0e460a4.chunk.css",
-    "main.js": "/2021-Goals/static/js/main.5138b7a0.chunk.js",
-    "main.js.map": "/2021-Goals/static/js/main.5138b7a0.chunk.js.map",
+    "main.css": "/2021-Goals/static/css/main.98a9b04a.chunk.css",
+    "main.js": "/2021-Goals/static/js/main.ae95c0a9.chunk.js",
+    "main.js.map": "/2021-Goals/static/js/main.ae95c0a9.chunk.js.map",
     "runtime-main.js": "/2021-Goals/static/js/runtime-main.ab1e79b6.js",
     "runtime-main.js.map": "/2021-Goals/static/js/runtime-main.ab1e79b6.js.map",
-    "static/js/2.b2adcaa1.chunk.js": "/2021-Goals/static/js/2.b2adcaa1.chunk.js",
-    "static/js/2.b2adcaa1.chunk.js.map": "/2021-Goals/static/js/2.b2adcaa1.chunk.js.map",
+    "static/js/2.ecfdfb91.chunk.js": "/2021-Goals/static/js/2.ecfdfb91.chunk.js",
+    "static/js/2.ecfdfb91.chunk.js.map": "/2021-Goals/static/js/2.ecfdfb91.chunk.js.map",
     "static/js/3.65538cf5.chunk.js": "/2021-Goals/static/js/3.65538cf5.chunk.js",
     "static/js/3.65538cf5.chunk.js.map": "/2021-Goals/static/js/3.65538cf5.chunk.js.map",
     "index.html": "/2021-Goals/index.html",
-    "static/css/main.f0e460a4.chunk.css.map": "/2021-Goals/static/css/main.f0e460a4.chunk.css.map",
-    "static/js/2.b2adcaa1.chunk.js.LICENSE.txt": "/2021-Goals/static/js/2.b2adcaa1.chunk.js.LICENSE.txt"
+    "static/css/main.98a9b04a.chunk.css.map": "/2021-Goals/static/css/main.98a9b04a.chunk.css.map",
+    "static/js/2.ecfdfb91.chunk.js.LICENSE.txt": "/2021-Goals/static/js/2.ecfdfb91.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab1e79b6.js",
-    "static/js/2.b2adcaa1.chunk.js",
-    "static/css/main.f0e460a4.chunk.css",
-    "static/js/main.5138b7a0.chunk.js"
+    "static/js/2.ecfdfb91.chunk.js",
+    "static/css/main.98a9b04a.chunk.css",
+    "static/js/main.ae95c0a9.chunk.js"
   ]
 }
