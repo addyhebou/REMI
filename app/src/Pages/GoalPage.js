@@ -53,6 +53,13 @@ export default class GoalPage extends Component {
                             </div>
                             { this.state.displaySteps && 
                                 <div>
+                                    {/* {(Goals[this.state.title]["Tasks"][task]["SMART Goal"] != "") ? (
+                                        return (
+                                            <h3></h3>
+                                        )
+                                    ):(continue)
+                                    } */}
+                                    <h3 className = "SMARTGoal">{Goals[this.state.title]["Tasks"][task]["SMART Goal"]}</h3>
                                     {Goals[this.state.title]["Tasks"][task]["Steps"].map((step) =>
                                         {
                                             return (

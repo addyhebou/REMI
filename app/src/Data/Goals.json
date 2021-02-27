@@ -8,28 +8,32 @@
                         "Clear Agenda Daily",
                         "Focus on Front End Classes",
                         "Study Daily"
-                    ]
+                    ],
+                    "SMART Goal": "Achieve a 3.5+ GPA by end of Spring 21 semester"
                 },
                 "Intern/Work" : {
                     "Steps": [
                         "Build Portfolio",
                         "Master React JS",
                         "Practice Front End Exercises",
-                        "Do relevant LeetCode",
-                        "Build at least 10 strong connects",
+                        "Do Relevant LeetCode",
+                        "Build at Least 10 Strong Connects",
                         "Apply to Jobs Everyday"
-                    ]
+                    ],
+                    "SMART Goal": "Earn a part-time front-end development or full-time intern by September"
                 },
                 "Stellar Portfolio" : {
                     "Steps": [
                         "Remake Common Projects",
                         "Work on JARVIS"
-                    ]
+                    ],
+                    "SMART Goal": "Add 5 Strong Interactive Web Apps"
                 },
                 "Develop SoundGood" : {
                     "Steps": [
                         "Stay on Top of Software Engineering"
-                    ]
+                    ],
+                    "SMART Goal": "Perfect all assignments in Software Engineering and Design Project"
                 }
             }
     },
@@ -43,22 +47,26 @@
                         "Watch TV Shows/Movies",
                         "Memorize and Master 4 Monologues",
                         "Read Plays"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 },
                 "Film Roles" : {
                     "Steps": [
                         "Check Backstage for Roles"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 },
                 "Sing a Lot" : {
                     "Steps": [
                         "Daily Vocal Exercises"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 },
                 "Dance a Lot" : {
                     "Steps": [
                         "Stay At It"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 }
             }
     },
@@ -73,29 +81,37 @@
                         "Type Beat Tutorials",
                         "Master Logic Pro X",
                         "Lock Vocal Mixing",
-                        "Read Songwriting Books"
-                    ]
+                        "Read Songwriting Books",
+                        "Be Mentored"
+                    ],
+                    "SMART Goal": ""
                 },
                 "Producer Brand" : {
                     "Steps": [
                         "Post IG Video Weekly",
                         "Post Tik Tok Videos 2x A Week",
                         "Post 5 Interactive Stories Daily",
-                        "Go Hard With Matty Beats Management"
-                    ]
+                        "Go Hard With Matty Beats Management",
+                        "Throw Contests",
+                        "Log in Blog Releases"
+                    ],
+                    "SMART Goal": "Gain 100k(Tik Tok) and 10k(Instagram)"
                 },
                 "Vocal Mixing Skills" : {
                     "Steps": [
                         "Read Engineering Books",
                         "Video Tutorials"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 },
                 "Industry Level Up":{
                     "Steps": [
                         "Target Songwriters through Instagram",
                         "Attend Conferences/seminars",
-                        "Stay In Contact With Contacts"
-                    ]
+                        "Stay In Contact With Contacts",
+                        "Be Mentored"
+                    ],
+                    "SMART Goal": "Land on New Music Friday, offered a publishing deal, release at least 10 songs, and produce 2 major artists"
                 }
             }
     },
@@ -109,8 +125,11 @@
                         "Work 20+ Hours a Week",
                         "Post Weekly on YouTube",
                         "Guitar Lessons",
-                        "Custom Beats"
-                    ]
+                        "Custom Beats",
+                        "Secure free LA housing"
+                    ],
+                    "SMART Goal": "Raise $3,800 (average case) for the summer and get free housing",
+                    "Saint Steph(10) Invest(30) Needs(20) LA(40)":""
                 },
                 "Invest" : {
                     "Steps": [
@@ -118,17 +137,23 @@
                         "Learn About More Value Investing",
                         "60% of Income In Business and Funds",
                         "Stock in Companies I Know"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 },
                 "Live Below Means" : {
                     "Steps": [
-                        "Hold a Strict and Observant Budget"
-                    ]
+                        "LA Housing – 40%",
+                        "Investment – 30%",
+                        "Needs – 20%",
+                        "Saint Steph – 10%"
+                    ],
+                    "SMART Goal": ""
                 },
                 "Scholarships" : {
                     "Steps":[
                         "February to April are Prime Months"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 }
             }
     },
@@ -140,28 +165,32 @@
                         "Sleep & Wake at Consistent Times",
                         "Control Light Exposure",
                         "Exercise Consistently"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 },
                 "Personal Fitness" : {
                     "Steps": [
                         "Workout 3+ Days/Week",
                         "Eat 3 Meals a Day",
                         "Stock on High Protein"
-                    ]
+                    ],
+                    "SMART Goal": "Gain 10 pounds"
                 },
                 "God" : {
                     "Steps":[
                         "Gospel Music Nutrition",
                         "Attend Church 2x Month",
                         "Pray in Thanks & Service"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 },
 
                 "Miina" : {
                     "Steps":[
                         "Reassure Her Daily",
                         "Make Solo Convo Time"
-                    ]
+                    ],
+                    "SMART Goal": ""
                 }
             }
     }
