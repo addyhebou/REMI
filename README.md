@@ -6,7 +6,7 @@
 4. Reminders Section Every 5 minutes
 5. Add task/goal function (edits JSON)
 6. Responsive Design (just show goals)✅
-7. Add SMART Goals
+7. Add SMART Goals ✅
 8. Book List
 
 ## Interview Questions
