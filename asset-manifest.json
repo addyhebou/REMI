@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/2021-Goals/static/css/main.cbe1c72b.chunk.css",
+    "main.css": "/2021-Goals/static/css/main.e532ba8e.chunk.css",
     "main.js": "/2021-Goals/static/js/main.046209d8.chunk.js",
     "main.js.map": "/2021-Goals/static/js/main.046209d8.chunk.js.map",
     "runtime-main.js": "/2021-Goals/static/js/runtime-main.ab1e79b6.js",
@@ -10,13 +10,13 @@
     "static/js/3.65538cf5.chunk.js": "/2021-Goals/static/js/3.65538cf5.chunk.js",
     "static/js/3.65538cf5.chunk.js.map": "/2021-Goals/static/js/3.65538cf5.chunk.js.map",
     "index.html": "/2021-Goals/index.html",
-    "static/css/main.cbe1c72b.chunk.css.map": "/2021-Goals/static/css/main.cbe1c72b.chunk.css.map",
+    "static/css/main.e532ba8e.chunk.css.map": "/2021-Goals/static/css/main.e532ba8e.chunk.css.map",
     "static/js/2.ecfdfb91.chunk.js.LICENSE.txt": "/2021-Goals/static/js/2.ecfdfb91.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab1e79b6.js",
     "static/js/2.ecfdfb91.chunk.js",
-    "static/css/main.cbe1c72b.chunk.css",
+    "static/css/main.e532ba8e.chunk.css",
     "static/js/main.046209d8.chunk.js"
   ]
 }
