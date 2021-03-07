@@ -113,6 +113,13 @@
     font-size: 64px;
   }
 
+  
+  .NavbarIcons{
+    display: flex;
+    height: 60px;
+    justify-content: flex-end;
+  }
+
   .Loader{
     height: 100vh;
     width: 100%;
