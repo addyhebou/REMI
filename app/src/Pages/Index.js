@@ -1,19 +1,13 @@
 import '../App.scss'
 import React, { Component } from 'react'
 import GoalSet from '../Components/GoalSet'
-import Clipboard from '../Components/Clipboard'
-import ShuffleCards from '../Components/ShuffleCards'
-import NavbarIcons from '../Components/NavbarIcons'
-
-
-
+import Navbar from '../Components/NavbarIcons'
 
 export default class Index extends Component {
     render() {
         return (
             <div>
-                <NavbarIcons />
-                <h1>2021 <strong>Goals</strong></h1>
+                <Navbar />
                 <div className = "GoalArray">
                     <GoalSet className = "GoalSet" title = "Music Tech CEO" color = "AFD8EF">
                         <div>Develop SoundGood</div>

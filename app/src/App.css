@@ -1,4 +1,7 @@
 .App{
+  animation-name: fade;
+  animation-iteration-count: 1;
+  height: 100vh;
   padding: 30px 40px;
 }
 
@@ -26,6 +29,8 @@ h1{
   font-weight: lighter;
   font-size: 64px;
 }
+
+
 
 .Task{
   background-color: #f5f5f5;

@@ -3,19 +3,6 @@ import Step from '../Components/Step'
 import Goals from '../Data/Goals.json'
 import '../App.scss';
 
-let title = "Music Creator";
-let task = "Producer Brand";
-
-// (Goals[title]["Tasks"][task]["Steps"]).map((step) =>{
-//     console.log(step);
-// })
-
-
-// {console.log(Goals[this.state.title]["Tasks"][this.state.task]["Steps"][0])};
-
-
-
-
 export default class GoalPage extends Component {
 
     constructor(props) {

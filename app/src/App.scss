@@ -1,12 +1,24 @@
 @media only screen and (max-width: 768px){
+  // ONLY MOBILES
   .App{
     align-items: center;
     display: flex;
     justify-content: center;
     padding: 30px 40px;
     text-align: center;
+    animation-name: fade;
+    animation-iteration-count: 1;
+    height: 100vh;
+    padding: 30px 40px;
     // height: 100vh;
   }
+
+  .Caption{
+    font-weight: lighter;
+    font-size: small;
+    font-style: italic;
+  }
+
 
   $randomNumber: random(3);
 
@@ -40,9 +52,36 @@
   }
 
   .Loader{
+    background-color: red;
+    animation-name: fade;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
   }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+  
+    25% {
+      opacity: 1;
+    }
+  
+    75% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+
 
   .Task{
     background-color: #e7e7e7;
@@ -77,13 +116,16 @@
   }
 }
 @media only screen and (min-width: 769px){
+  // DESKTOP VIEW
   .App{
     align-items: center;
     display: flex;
     justify-content: center;
     padding: 30px 40px;
     text-align: center;
-    // height: 100vh;
+    animation-name: fade;
+    animation-duration: 3000ms;
+    padding: 30px 40px;
   }
 
   $randomNumber: random(3);
@@ -113,16 +155,46 @@
     font-size: 64px;
   }
 
+  .Icon{
+    width: 4ch;
+  }
   
   .NavbarIcons{
     display: flex;
-    height: 60px;
+    height: 160px;
     justify-content: flex-end;
+  }
+
+  .navTitle{
+    flex: 0.50;
+  }
+  
+  .navIcons{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0.25;
   }
 
   .Loader{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 
   .Task{
