@@ -6,8 +6,8 @@
                     "Steps": [
                         "Attend All Classes",
                         "Clear Agenda Daily",
-                        "Focus on Front End Classes",
-                        "Study Daily"
+                        "Study Daily",
+                        "Check NYUClasses For Assignments Every Sunday"
                     ],
                     "SMART Goal": "Achieve a 3.5+ GPA by end of Spring 21 semester"
                 },
@@ -18,7 +18,8 @@
                         "Practice Front End Exercises",
                         "Do Relevant LeetCode",
                         "Build at Least 10 Strong Connects",
-                        "Apply to Jobs Everyday"
+                        "Apply to Jobs Everyday",
+                        "Focus on Front End Classes"
                     ],
                     "SMART Goal": "Earn a part-time front-end development job or full-time internship by September"
                 },

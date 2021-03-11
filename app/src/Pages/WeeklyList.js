@@ -21,11 +21,17 @@ export default class WeeklyList extends Component {
         });
     }
 
+    setToDos = (text) => {
+        this.setState({
+            toDoList: [],
+        })
+    }
+
     render() {
         return (
             <div>
                 <h1>Your Weekly Goals</h1>
-                <Form setInputText = {this.setInputText}/>
+                <Form inputText = {this.inputText} setInputText = {this.setInputText} toDos = {this.toDoList} setToDos = {this.setToDos}/>
                 <ToDoList item = {this.inputText}/>
             </div>
         )
