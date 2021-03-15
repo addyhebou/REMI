@@ -7,8 +7,8 @@
     padding: 30px 40px;
     text-align: center;
     animation-name: fade;
-    animation-iteration-count: 1;
-    height: 100vh;
+    animation-duration: 3000ms;
+    // height: 100vh;
     padding: 30px 40px;
     // height: 100vh;
   }
@@ -43,24 +43,29 @@
     justify-content: space-evenly;
   }
 
-  .Task{
-  }
-
   h1{
     font-weight: lighter;
     font-size: 64px;
   }
 
+  .Icon{
+    width: 5vh;
+  }
+
   .Loader{
-    background-color: red;
-    animation-name: fade;
-    animation-duration: 2000ms;
     animation-iteration-count: 1;
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+  }
+
+  .navIcons{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
   }
 
   @keyframes fade {
