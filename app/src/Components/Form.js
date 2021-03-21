@@ -1,23 +1,16 @@
 import React, { Component } from 'react'
 
 const Form = ({ inputText, setInputText, toDos, setToDos }) => {
-    
+
     const inputTextHandler = (e) =>{
         setInputText(e.target.value);
     }
 
     const submitToDoHandler = (e) =>{
         e.preventDefault();
-        console.log("waassup")
-        setToDos = (inputText) => {
-            console.log("we here")
-            const item = { name: inputText, completed: false, id: Math.random() * 1000 };
-            const lst = toDos.concat(inputText)
-            this.setState({
-                toDos: lst,
-            })
-        }
-
+        const item = { name: inputText, completed: false, id: Math.random() * 1000 };
+        const lst = toDos.concat(item);
+        setToDos(lst);
     }
 
     return(

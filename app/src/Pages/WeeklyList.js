@@ -3,7 +3,6 @@ import Form from '../Components/Form';
 import ToDoList from '../Components/ToDoList';
 import '../App.scss';
 
-
 export default class WeeklyList extends Component {
 
     constructor(props) {
@@ -21,9 +20,9 @@ export default class WeeklyList extends Component {
         });
     }
 
-    setToDos = (text) => {
+    setToDos = (lst) => {
         this.setState({
-            toDoList: [],
+            toDoList: lst,
         })
     }
 
@@ -31,8 +30,8 @@ export default class WeeklyList extends Component {
         return (
             <div>
                 <h1>Your Weekly Goals</h1>
-                <Form inputText = {this.inputText} setInputText = {this.setInputText} toDos = {this.toDoList} setToDos = {this.setToDos}/>
-                <ToDoList item = {this.inputText}/>
+                <Form inputText = {this.state.inputText} setInputText = {this.setInputText} toDos = {this.state.toDoList} setToDos = {this.setToDos}/>
+                <ToDoList item = {this.state.inputText} toDos = {this.state.toDoList}/>
             </div>
         )
     }
