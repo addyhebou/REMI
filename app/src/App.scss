@@ -119,6 +119,10 @@
     padding: 15px;
     text-align: center;
   }
+
+  .toDoItem{
+    display: flex;
+  }
 }
 @media only screen and (min-width: 769px){
   // DESKTOP VIEW
@@ -236,6 +240,10 @@
     margin: 15px 40px;
     padding: 15px;
     text-align: center;
+  }
+
+  .toDoItem{
+    display: flex;
   }
 
 }

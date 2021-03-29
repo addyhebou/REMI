@@ -9,8 +9,8 @@ export default class WeeklyList extends Component {
         super(props)
     
         this.state = {
-             inputText: '',
-             toDoList: [],
+            inputText: '',
+            toDoList: [],
         }
     }
 
@@ -31,7 +31,7 @@ export default class WeeklyList extends Component {
             <div>
                 <h1>Your Weekly Goals</h1>
                 <Form inputText = {this.state.inputText} setInputText = {this.setInputText} toDos = {this.state.toDoList} setToDos = {this.setToDos}/>
-                <ToDoList item = {this.state.inputText} toDos = {this.state.toDoList}/>
+                <ToDoList item = {this.state.inputText} toDos = {this.state.toDoList} setToDos = {this.setToDos}/>
             </div>
         )
     }

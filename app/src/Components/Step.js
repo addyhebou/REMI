@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-console.log("we here")
 export default class Step extends Component {
     constructor(props) {
         super(props)

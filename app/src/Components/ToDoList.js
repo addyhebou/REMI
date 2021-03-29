@@ -1,19 +1,22 @@
 import React, { Component, useState } from 'react';
+import ToDo from '../Components/ToDo.js';
 
-const ToDoList = (lst) =>{
-    // How to map over objects
-    console.log(lst);
+const ToDoList = ({toDos, setToDos}) =>{
     return(
         <div className = "toDoContainer">
             <ul className = "toDoList">
-                <li>Test</li>
-                {Object.keys(lst['toDos']).map(item =>{
-                    <li>{item}</li>
-                })}
-                <li>Do I at least get this item?</li>
+                {
+                    toDos.map(item => {
+                        return (
+                            <ToDo item = {item} toDos = {toDos} setToDos = {setToDos}/>
+                        )
+                    })
+                }
             </ul>
         </div>
     )
 }
 
 export default ToDoList;
+
+// Look at getting Harv to be a mentor info@harvmusic.com
