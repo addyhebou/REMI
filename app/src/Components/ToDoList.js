@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import ToDo from '../Components/ToDo.js';
 
 const ToDoList = ({toDos, setToDos}) =>{
@@ -6,6 +6,7 @@ const ToDoList = ({toDos, setToDos}) =>{
         <div className = "toDoContainer">
             <ul className = "toDoList">
                 {
+                    // console.log(toDos),
                     toDos.map(item => {
                         return (
                             <ToDo item = {item} toDos = {toDos} setToDos = {setToDos}/>

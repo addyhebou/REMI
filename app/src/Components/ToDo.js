@@ -8,7 +8,7 @@ export default function ToDo({ item, toDos, setToDos }) {
     };
 
     const completeHandler = () => {
-        let updatedList = toDos.map(iter => {
+        let updatedList = toDos.forEach(iter => {
             if (iter.id === item.id){
                 item.completed = !item.completed;
             }

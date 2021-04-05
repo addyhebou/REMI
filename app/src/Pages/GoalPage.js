@@ -34,8 +34,6 @@ export default class GoalPage extends Component {
                 <h1>{this.state.title}</h1>
                 <h2 className = "Task Task_Mobile">{this.state.task}</h2>
                 {this.state.tasks.map((task) => {
-                    let b = 10;
-                    // {console.log(Goals[this.state.title]["Tasks"][task]["Steps"])};
                     return (
                         <div>
                             <div className = "Task Task_Mobile">
@@ -60,11 +58,3 @@ export default class GoalPage extends Component {
         )
     }
 }
-
-
-{/* // {if (this.state.displaySteps){ */}
-{/* //                                         Goals[this.state.title]["Tasks"][task]["Steps"]).map((step) =>{
-//                                             return <Step>{step}</Step>
-//                                         }
-//                                     }}
- */}

@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import Form from '../Components/Form';
 import ToDoList from '../Components/ToDoList';
 import '../App.scss';
@@ -10,7 +10,7 @@ export default class WeeklyList extends Component {
     
         this.state = {
             inputText: '',
-            toDoList: [],
+            toDoList: localStorage.getItem("lst") || [],
         }
     }
 
@@ -21,9 +21,14 @@ export default class WeeklyList extends Component {
     }
 
     setToDos = (lst) => {
+        // CURRENT PROBLEMS ARE HAPPENING RIGHT HERE
+        localStorage.setItem("lst", JSON.stringify(lst))
         this.setState({
-            toDoList: lst,
+            toDoList: localStorage.getItem("lst"),
         })
+        console.log("lst parameter", lst)
+        console.log("this.toDoList", this.toDoList)
+        console.log("Localstorage lst: ", localStorage.getItem("lst"))
     }
 
     render() {

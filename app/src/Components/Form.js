@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const Form = ({ inputText, setInputText, toDos, setToDos }) => {
 
@@ -10,7 +10,14 @@ const Form = ({ inputText, setInputText, toDos, setToDos }) => {
         e.preventDefault();
         const item = { name: inputText, completed: false, id: Math.random() * 1000 };
         const lst = toDos.concat(item);
+        localStorage.setItem("lst", lst)
         setToDos(lst);
+        console.log("lst parameter", lst)
+    }
+
+    const clearStorage = (e) =>{
+        e.preventDefault();
+        localStorage.clear()
     }
 
     return(
@@ -24,6 +31,7 @@ const Form = ({ inputText, setInputText, toDos, setToDos }) => {
                 <option value = "Personal">Personal</option>
             </select>
             <button onClick = {submitToDoHandler} type = "submit">Submit</button>
+            <button onClick = {clearStorage}>Clear Storage</button>
         </form>
     )
 }
