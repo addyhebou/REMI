@@ -27,8 +27,9 @@ export default class WeeklyList extends Component {
             toDoList: localStorage.getItem("lst"),
         })
         console.log("lst parameter", lst)
-        console.log("this.toDoList", this.toDoList)
+        console.log("this.state.toDoList", this.state.toDoList)
         console.log("Localstorage lst: ", localStorage.getItem("lst"))
+        console.log("localstorage lst back as an object", JSON.parse(localStorage.getItem("lst")))
     }
 
     render() {
@@ -36,7 +37,11 @@ export default class WeeklyList extends Component {
             <div>
                 <h1>Your Weekly Goals</h1>
                 <Form inputText = {this.state.inputText} setInputText = {this.setInputText} toDos = {this.state.toDoList} setToDos = {this.setToDos}/>
-                <ToDoList item = {this.state.inputText} toDos = {this.state.toDoList} setToDos = {this.setToDos}/>
+                <ToDoList item = {this.state.inputText} 
+                    toDos = {
+                        (this.state.toDoList.length != 0) ? (JSON.parse(this.state.toDoList))
+                        :([])
+                    } setToDos = {this.setToDos}/>
             </div>
         )
     }

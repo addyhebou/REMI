@@ -6,7 +6,8 @@ const ToDoList = ({toDos, setToDos}) =>{
         <div className = "toDoContainer">
             <ul className = "toDoList">
                 {
-                    // console.log(toDos),
+                    console.log("toDos passed from the this.state.toDoList: ", toDos),
+                    console.log("type of toDos passed from this.state.toDoList: ", typeof toDos),
                     toDos.map(item => {
                         return (
                             <ToDo item = {item} toDos = {toDos} setToDos = {setToDos}/>
