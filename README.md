@@ -59,3 +59,15 @@ https://leetcode.com/discuss/general-discussion/319794/where-i-can-find-the-inte
 * Talent is Overrated ❌
 * No Excuses ✅
 
+
+## Interview Questions
+
+### Spotify
+* Hannah Wolf - Campus Recruiter
+* Alexandra Krupp – Tech Learning Senior Product Manager
+* Prionti Nasir – Data Science Intern
+* Olu Akande – Data Science Intern
+
+
+### Tik Tok
+* Aaron Lam - Software Engineer

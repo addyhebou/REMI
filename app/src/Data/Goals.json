@@ -199,11 +199,11 @@
                 },
                 "Model Form" : {
                     "Steps": [
-                        "Haircut Always",
-                        "Hair Braided",
-                        "Accessorize",
+                        "Hair: Cut, Braided, Beard Clean",
+                        "Clothes: Accessorize for Season",
                         "Fragrance: Deodorant and Cologne",
-                        "Build Body"
+                        "Body: Build",
+
                     ],
                     "SMART Goal": ""
                 }
