@@ -196,6 +196,16 @@
                         "Make Solo Convo Time"
                     ],
                     "SMART Goal": ""
+                },
+                "Model Form" : {
+                    "Steps": [
+                        "Haircut Always",
+                        "Hair Braided",
+                        "Accessorize",
+                        "Fragrance: Deodorant and Cologne",
+                        "Build Body"
+                    ],
+                    "SMART Goal": ""
                 }
             }
     }
