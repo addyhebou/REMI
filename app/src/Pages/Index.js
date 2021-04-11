@@ -38,6 +38,7 @@ export default class Index extends Component {
                         <div>Personal Fitness</div>
                         <div>God</div>
                         <div>Miina</div>
+                        <div>Model Form</div>
                     </GoalSet>
                 </div>
             </div>
