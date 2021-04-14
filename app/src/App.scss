@@ -1,6 +1,14 @@
+// *{
+//   @font-face {
+//     font-family: 'SF Pro Display';
+//     src: url('');
+//   }
+//   font-family: SF;
+// }
+
 @media only screen and (max-width: 768px){
-  // ONLY MOBILES
   .App{
+  // ONLY MOBILES
     align-items: center;
     display: flex;
     justify-content: center;
@@ -121,7 +129,55 @@
   }
 
   .toDoItem{
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 12px;
+    box-shadow: 13px 16px 29px rgba(0, 0, 0, 0.15);
     display: flex;
+    height: 49px;
+    justify-content: space-around;
+    margin: 11px;
+    width: 236px;
+  }
+
+  .thirtyThree > .colorBar{
+    background: #EBBD87;
+    border-radius: 7px;
+    height: 38px;
+    width: 7px;
+  }
+
+  .thirtyThree > li{
+    color: #59370F;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    list-style: none;
+
+  }
+
+
+  .toDoItem > .checkButton{
+    background: #FFFFFF;
+    border: 2px solid #EBBD87;
+    border-radius: 100%;
+    box-sizing: border-box;
+    width: 23px;
+    height: 23px;
+  }
+
+  .thirtyThree{
+    align-items: center;
+    // border: 2px solid purple;
+    display: flex;
+    flex-direction: row;
+    flex: 0.33;
+  }
+
+  .thirtyThree > * {
+    margin: 0px 12px;
   }
 }
 @media only screen and (min-width: 769px){
@@ -243,7 +299,47 @@
   }
 
   .toDoItem{
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 12px;
+    box-shadow: 13px 16px 29px rgba(0, 0, 0, 0.15);
     display: flex;
+    height: 49px;
+    justify-content: space-around;
+    margin: 11px;
+    width: 236px;
   }
 
+  .thirtyThree > .colorBar{
+    background: #EBBD87;
+    border-radius: 7px;
+    height: 38px;
+    width: 7px;
+  }
+
+  .thirtyThree > li{
+    list-style: none;
+  }
+
+
+  .toDoItem > .checkButton{
+    background: #FFFFFF;
+    border: 2px solid #EBBD87;
+    border-radius: 100%;
+    box-sizing: border-box;
+    width: 23px;
+    height: 23px;
+  }
+
+  .thirtyThree{
+    align-items: center;
+    // border: 2px solid purple;
+    display: flex;
+    flex-direction: row;
+    flex: 0.33;
+  }
+
+  .thirtyThree > * {
+    margin: 0px 12px;
+  }
 }

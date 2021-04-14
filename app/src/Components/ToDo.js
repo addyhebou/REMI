@@ -1,4 +1,5 @@
 import React from 'react'
+import DeleteIcon from '@material-ui/icons/Delete';
 
 export default function ToDo({ item, toDos, setToDos }) {
 
@@ -22,10 +23,16 @@ export default function ToDo({ item, toDos, setToDos }) {
     }
     return (
         <div className = "toDoItem">
-            <li>{item.name}</li>
-            <button onClick = {completeHandler}>Check</button>
-            <button onClick = {deleteHandler}>Trash</button>
-            <button onClick = {displayLst}>Display List</button>
+            <div className = "thirtyThree">
+                <div className = "colorBar"></div>
+                <li>{item.name}</li>
+            </div>
+            <div className = "thirtyThree"></div>
+            <div className = "thirtyThree">
+                <DeleteIcon onClick = {deleteHandler} />
+                <button className = "checkButton" onClick = {completeHandler}></button>
+            </div>
+            {/* <button onClick = {displayLst}>Display List</button> */}
         </div>
     )
 }
