@@ -11,6 +11,7 @@ export default class WeeklyList extends Component {
         this.state = {
             inputText: '',
             toDoList: JSON.parse(localStorage.getItem("lst")) || [],
+            length: JSON.parse(localStorage.getItem("lst")).length,
         }
     }
 
@@ -25,24 +26,43 @@ export default class WeeklyList extends Component {
         localStorage.setItem("lst", JSON.stringify(lst))
         this.setState({
             toDoList: JSON.parse(localStorage.getItem("lst")),
+            length: JSON.parse(localStorage.getItem("lst")).length,
         })
-        console.log("lst parameter", lst)
-        console.log("this.state.toDoList", this.state.toDoList)
-        console.log("Localstorage lst: ", localStorage.getItem("lst"))
-        console.log("localstorage lst back as an object", JSON.parse(localStorage.getItem("lst")))
-        console.log("Type of this.state.toDoList", typeof this.state.toDoList)
+        // console.log("lst parameter", lst)
+        // console.log("this.state.toDoList", this.state.toDoList)
+        // console.log("Localstorage lst: ", localStorage.getItem("lst"))
+        // console.log("localstorage lst back as an object", JSON.parse(localStorage.getItem("lst")))
+        // console.log("Type of this.state.toDoList", typeof this.state.toDoList)
+        console.log("Length of object:", this.state.length);
+    }
+
+    setCategory = (category) => {
+        if (category === "MusicCreator") return "#EBBD87";
+        else if (category === "FinancialFreedom") return "#C0EFAF";
+        else if (category === "Performance") return "#F59393";
+        else if (category === "MusicTech") return "#AFD8EF";
+        else if (category === "Personal") return "#D1A9D4";
     }
 
     render() {
         return (
             <div>
                 <h1>Your Weekly Goals</h1>
-                <Form inputText = {this.state.inputText} setInputText = {this.setInputText} toDos = {this.state.toDoList} setToDos = {this.setToDos}/>
-                <ToDoList item = {this.state.inputText} 
+                <h3>Total Tasks: {this.state.length}</h3>
+                <Form
+                    inputText = {this.state.inputText} 
+                    setInputText = {this.setInputText} 
+                    toDos = {this.state.toDoList} 
+                    setToDos = {this.setToDos} 
+                    setCategory = {this.setCategory}/>
+                <ToDoList 
+                    item = {this.state.inputText} 
                     toDos = {
                         (this.state.toDoList.length != 0) ? (this.state.toDoList)
                         :([])
-                    } setToDos = {this.setToDos}/>
+                    }
+                    setToDos = {this.setToDos}
+                    categoryColor = {this.setCategory()}/>
             </div>
         )
     }

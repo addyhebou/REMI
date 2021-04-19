@@ -1,12 +1,16 @@
 import React from 'react'
 
-const Form = ({ inputText, setInputText, toDos, setToDos }) => {
+const Form = ({ inputText, setInputText, toDos, setToDos, setCategory }) => {
 
-    const inputTextHandler = (e) =>{
+    const inputTextHandler = (e) => {
         setInputText(e.target.value);
     }
 
-    const submitToDoHandler = (e) =>{
+    const categoryHandler = (e) => {
+        setCategory(e.target.value);
+    }
+
+    const submitToDoHandler = (e) => {
         e.preventDefault();
         const item = { name: inputText, completed: false, id: Math.random() * 1000 };
         const lst = toDos.concat(item);
@@ -15,7 +19,7 @@ const Form = ({ inputText, setInputText, toDos, setToDos }) => {
         console.log("lst parameter", lst)
     }
 
-    const clearStorage = (e) =>{
+    const clearStorage = (e) => {
         e.preventDefault();
         localStorage.clear()
     }
@@ -23,9 +27,9 @@ const Form = ({ inputText, setInputText, toDos, setToDos }) => {
     return(
         <form>
             <input onChange = {inputTextHandler} placeholder = "Enter Task" type = "text" />
-            <select size="5" multiple>
+            <select onChange = {categoryHandler} name = "category" size="5" multiple>
                 <option value = "MusicTech">Music Tech</option>
-                <option value = "Performancence">Performance</option>
+                <option value = "Performance">Performance</option>
                 <option value = "MusicCreator">Music Creator</option>
                 <option value = "FinancialFreedom">Financial Freedom</option>
                 <option value = "Personal">Personal</option>

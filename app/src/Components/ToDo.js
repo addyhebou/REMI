@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState, setState }from 'react'
 import DeleteIcon from '@material-ui/icons/Delete';
 
-export default function ToDo({ item, toDos, setToDos }) {
+export default function ToDo({ item, toDos, setToDos, categoryColor }) {
 
     const deleteHandler = () => {
         let updatedList = toDos.filter((el) => el.id !== item.id);
@@ -21,6 +21,14 @@ export default function ToDo({ item, toDos, setToDos }) {
     const displayLst = () => {
         console.log(toDos);
     }
+
+    const [color, setColor] = useState('');
+
+    // const setColor = () => {
+    //     setState(categoryColor);
+    //     console.log("Color passed in is", categoryColor);
+    // }
+
     return (
         <div className = "toDoItem">
             <div className = "thirtyThree">
