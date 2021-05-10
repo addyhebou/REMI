@@ -5,6 +5,7 @@ import Navbar from '../Components/NavbarIcons'
 
 export default class Index extends Component {
     render() {
+        console.log("hollywood cole");
         return (
             <div>
                 <Navbar />
