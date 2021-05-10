@@ -11,7 +11,7 @@ export default class WeeklyList extends Component {
         this.state = {
             inputText: '',
             toDoList: JSON.parse(localStorage.getItem("lst")) || [],
-            length: JSON.parse(localStorage.getItem("lst")).length,
+            length: JSON.parse(localStorage.getItem("lst")).length || 0,
         }
     }
 
