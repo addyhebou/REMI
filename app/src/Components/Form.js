@@ -7,7 +7,8 @@ const Form = ({ inputText, setInputText, toDos, setToDos, setCategory }) => {
     }
 
     const categoryHandler = (e) => {
-        setCategory(e.target.value);
+        console.log(e.target.value);
+        console.log(setCategory(e.target.value));
     }
 
     const submitToDoHandler = (e) => {

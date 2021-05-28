@@ -29,16 +29,18 @@ export default function ToDo({ item, toDos, setToDos, categoryColor }) {
     //     console.log("Color passed in is", categoryColor);
     // }
 
+    console.log(categoryColor);
     return (
         <div className = "toDoItem">
             <div className = "thirtyThree">
-                <div className = "colorBar"></div>
+                <div className = "colorBar" style = {{color: {categoryColor}}}></div>
                 <li>{item.name}</li>
             </div>
             <div className = "thirtyThree"></div>
             <div className = "thirtyThree">
                 <DeleteIcon onClick = {deleteHandler} />
-                <button className = "checkButton" onClick = {completeHandler}></button>
+                <input type = "checkbox" className = "checkButton" onClick = {completeHandler}/>
+                {/* <button type = "checkbox" className = "checkButton" onClick = {completeHandler}></button> */}
             </div>
             {/* <button onClick = {displayLst}>Display List</button> */}
         </div>

@@ -11,7 +11,7 @@ export default class WeeklyList extends Component {
         this.state = {
             inputText: '',
             toDoList: JSON.parse(localStorage.getItem("lst")) || [],
-            length: JSON.parse(localStorage.getItem("lst")).length || 0,
+            length: 0,
         }
     }
 
@@ -45,6 +45,7 @@ export default class WeeklyList extends Component {
     }
 
     render() {
+        // console.log(setCategory());
         return (
             <div>
                 <h1>Your Weekly Goals</h1>
