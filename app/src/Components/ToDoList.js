@@ -2,8 +2,6 @@ import React from 'react';
 import ToDo from '../Components/ToDo.js';
 
 const ToDoList = ({toDos, setToDos, categoryColor}) =>{
-    console.log("hey");
-    console.log(categoryColor);
     return(
         <div className = "toDoContainer">
             <ul className = "toDoList">

@@ -2,18 +2,21 @@ import React from 'react'
 
 const Form = ({ inputText, setInputText, toDos, setToDos, setCategory }) => {
 
+    var newColor = '';
+
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
     }
 
     const categoryHandler = (e) => {
         console.log(e.target.value);
-        console.log(setCategory(e.target.value));
+        newColor = setCategory(e.target.value);
+        console.log('The newColor variable is now', newColor);
     }
 
     const submitToDoHandler = (e) => {
         e.preventDefault();
-        const item = { name: inputText, completed: false, id: Math.random() * 1000 };
+        const item = { name: inputText, completed: false, id: Math.random() * 1000, color: newColor };
         const lst = toDos.concat(item);
         localStorage.setItem("lst", lst)
         setToDos(lst);

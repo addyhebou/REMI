@@ -3,11 +3,16 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 export default function ToDo({ item, toDos, setToDos, categoryColor }) {
 
+    // console.log("The color passed in to this ToDo item is: ", categoryColor);
+
+
+    // Handles deleting items
     const deleteHandler = () => {
         let updatedList = toDos.filter((el) => el.id !== item.id);
         setToDos(updatedList);
     };
-
+    
+    // Handles completion states
     const completeHandler = () => {
         let updatedList = toDos.forEach(iter => {
             if (iter.id === item.id){
@@ -15,34 +20,31 @@ export default function ToDo({ item, toDos, setToDos, categoryColor }) {
             }
         })
         console.log(updatedList)
-        // setToDos(updatedList);
+    }
+    
+    
+    // Handles the Strikethrough Texts
+    const [isChecked, changeLine] = useState('none');
+    const addLine = () => {
+        if (isChecked === 'none') changeLine('line-through');
+        else changeLine('none');
+        console.log(isChecked);
     }
 
-    const displayLst = () => {
-        console.log(toDos);
-    }
-
-    const [color, setColor] = useState('');
-
-    // const setColor = () => {
-    //     setState(categoryColor);
-    //     console.log("Color passed in is", categoryColor);
-    // }
-
-    console.log(categoryColor);
+    let color = item['color'];
+    
+    console.log('The color for this entry is ', color);
     return (
         <div className = "toDoItem">
             <div className = "thirtyThree">
-                <div className = "colorBar" style = {{color: {categoryColor}}}></div>
-                <li>{item.name}</li>
+                <div className = "colorBar" style = {{backgroundColor: color}}></div>
+                <li style = {{textDecorationLine: isChecked}}>{item.name}</li>
             </div>
             <div className = "thirtyThree"></div>
             <div className = "thirtyThree">
                 <DeleteIcon onClick = {deleteHandler} />
-                <input type = "checkbox" className = "checkButton" onClick = {completeHandler}/>
-                {/* <button type = "checkbox" className = "checkButton" onClick = {completeHandler}></button> */}
+                <input type = "checkbox" className = "checkButton" onClick = {completeHandler, addLine}/>
             </div>
-            {/* <button onClick = {displayLst}>Display List</button> */}
         </div>
     )
 }

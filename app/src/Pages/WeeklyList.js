@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import Form from '../Components/Form';
 import ToDoList from '../Components/ToDoList';
 import '../App.scss';
@@ -12,7 +12,14 @@ export default class WeeklyList extends Component {
             inputText: '',
             toDoList: JSON.parse(localStorage.getItem("lst")) || [],
             length: 0,
+            color: '',
         }
+    }
+
+    setColor = (hexCode) => {
+        this.setState({
+            color: hexCode,
+        })
     }
 
     setInputText = (text) =>{
@@ -37,15 +44,23 @@ export default class WeeklyList extends Component {
     }
 
     setCategory = (category) => {
-        if (category === "MusicCreator") return "#EBBD87";
+        if (category === "MusicCreator"){
+            return "#EBBD87";
+        }
         else if (category === "FinancialFreedom") return "#C0EFAF";
         else if (category === "Performance") return "#F59393";
         else if (category === "MusicTech") return "#AFD8EF";
         else if (category === "Personal") return "#D1A9D4";
+        return '#AFD8EF';
     }
+
+
+
 
     render() {
         // console.log(setCategory());
+        // let color = setCategory();
+        // console.log(color);
         return (
             <div>
                 <h1>Your Weekly Goals</h1>
@@ -63,7 +78,7 @@ export default class WeeklyList extends Component {
                         :([])
                     }
                     setToDos = {this.setToDos}
-                    categoryColor = {this.setCategory()}/>
+                    categoryColor = {this.state.color}/>
             </div>
         )
     }
