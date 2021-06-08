@@ -1,7 +1,7 @@
 import React from 'react';
 import ToDo from '../Components/ToDo.js';
 
-const ToDoList = ({toDos, setToDos, categoryColor}) =>{
+const ToDoList = ({toDos, setToDos, categoryColor, setNumberOfCrossedOff, setNumberOfTasksLeft}) =>{
     return(
         <div className = "toDoContainer">
             <ul className = "toDoList">
@@ -10,7 +10,13 @@ const ToDoList = ({toDos, setToDos, categoryColor}) =>{
                     // console.log("toDos passed from the this.state.toDoList: ", toDos),
                     toDos.map(item => {
                         return (
-                            <ToDo item = {item} toDos = {toDos} setToDos = {setToDos} categoryColor = {categoryColor}/>
+                            <ToDo 
+                                item = {item} 
+                                toDos = {toDos} 
+                                setToDos = {setToDos} 
+                                categoryColor = {categoryColor} 
+                                setNumberOfCrossedOff = {setNumberOfCrossedOff}
+                                setNumberOfTasksLeft = {setNumberOfTasksLeft}/>
                         )
                     })
                 }

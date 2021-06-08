@@ -1,10 +1,7 @@
-import React, { useState, setState }from 'react'
+import React, { useState }from 'react'
 import DeleteIcon from '@material-ui/icons/Delete';
 
-export default function ToDo({ item, toDos, setToDos, categoryColor }) {
-
-    // console.log("The color passed in to this ToDo item is: ", categoryColor);
-
+export default function ToDo({ item, toDos, setToDos, setNumberOfCrossedOff, setNumberOfTasksLeft }) {
 
     // Handles deleting items
     const deleteHandler = () => {
@@ -19,21 +16,33 @@ export default function ToDo({ item, toDos, setToDos, categoryColor }) {
                 item.completed = !item.completed;
             }
         })
-        console.log(updatedList)
+        console.log(updatedList);
     }
     
     
     // Handles the Strikethrough Texts
     const [isChecked, changeLine] = useState('none');
-    const addLine = () => {
-        if (isChecked === 'none') changeLine('line-through');
-        else changeLine('none');
+    const crossOff = () => {
+        if (isChecked === 'none') {
+            changeLine('line-through');
+            setNumberOfTasksLeft(setNumberOfCrossedOff(true));
+        }
+        else {
+            changeLine('none');
+            setNumberOfTasksLeft(setNumberOfCrossedOff(false));
+        }
         console.log(isChecked);
+    }
+
+
+    // Marks Tasks as Complete & Crosses Them Off
+    const completeTaskFunc = () => {
+        completeHandler();
+        crossOff();
     }
 
     let color = item['color'];
     
-    console.log('The color for this entry is ', color);
     return (
         <div className = "toDoItem">
             <div className = "thirtyThree">
@@ -43,7 +52,7 @@ export default function ToDo({ item, toDos, setToDos, categoryColor }) {
             <div className = "thirtyThree"></div>
             <div className = "thirtyThree">
                 <DeleteIcon onClick = {deleteHandler} />
-                <input type = "checkbox" className = "checkButton" onClick = {completeHandler, addLine}/>
+                <input type = "checkbox" className = "checkButton" onClick = { completeTaskFunc }/>
             </div>
         </div>
     )

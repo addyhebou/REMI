@@ -9,9 +9,7 @@ const Form = ({ inputText, setInputText, toDos, setToDos, setCategory }) => {
     }
 
     const categoryHandler = (e) => {
-        console.log(e.target.value);
         newColor = setCategory(e.target.value);
-        console.log('The newColor variable is now', newColor);
     }
 
     const submitToDoHandler = (e) => {
@@ -20,7 +18,6 @@ const Form = ({ inputText, setInputText, toDos, setToDos, setCategory }) => {
         const lst = toDos.concat(item);
         localStorage.setItem("lst", lst)
         setToDos(lst);
-        console.log("lst parameter", lst)
     }
 
     const clearStorage = (e) => {

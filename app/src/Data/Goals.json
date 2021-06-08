@@ -126,6 +126,17 @@
     "Financial Freedom": {
         "Tasks":
             {
+                "HIGH Credit Score" : {
+                    "Steps": [
+                        "Treat the card like it's cash in hand",
+                        "Pay off cards fully and on time",
+                        "Add unsecured credit card after 6 months",
+                        "Use a small utilization rate (<30%) of credit given to you",
+                        "Have a mix of credit (mortgage, car loans)",
+                        "Don't make a lot of inquiries"
+                    ],
+                    "SMART Goal": "Achieve a credit score of 750+ by 2022, 850 by 2023"
+                }, 
                 "Max Streams of Income" : {
                     "Steps": [
                         "Apply 3 Jobs / Day",

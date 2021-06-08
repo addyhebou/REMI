@@ -29,6 +29,7 @@ export default class Index extends Component {
                         <div>Industry Level Up</div>
                     </GoalSet>
                     <GoalSet title = "Financial Freedom" color = "C0EFAF">
+                        <div>HIGH Credit Score</div>
                         <div>Max Streams of Income</div>
                         <div>Invest</div>
                         <div>Live Below Means</div>

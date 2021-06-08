@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import Form from '../Components/Form';
 import ToDoList from '../Components/ToDoList';
 import '../App.scss';
@@ -13,6 +13,7 @@ export default class WeeklyList extends Component {
             toDoList: JSON.parse(localStorage.getItem("lst")) || [],
             length: 0,
             color: '',
+            numberOfCrossedOff: 0,
         }
     }
 
@@ -33,14 +34,14 @@ export default class WeeklyList extends Component {
         localStorage.setItem("lst", JSON.stringify(lst))
         this.setState({
             toDoList: JSON.parse(localStorage.getItem("lst")),
-            length: JSON.parse(localStorage.getItem("lst")).length,
+            length: this.setNumberOfTasksLeft(this.state.numberOfCrossedOff),
+            // length: JSON.parse(localStorage.getItem("lst")).length,
         })
         // console.log("lst parameter", lst)
         // console.log("this.state.toDoList", this.state.toDoList)
         // console.log("Localstorage lst: ", localStorage.getItem("lst"))
         // console.log("localstorage lst back as an object", JSON.parse(localStorage.getItem("lst")))
         // console.log("Type of this.state.toDoList", typeof this.state.toDoList)
-        console.log("Length of object:", this.state.length);
     }
 
     setCategory = (category) => {
@@ -54,6 +55,24 @@ export default class WeeklyList extends Component {
         return '#AFD8EF';
     }
 
+    setNumberOfCrossedOff = (bool) => {
+        if (bool) {
+            this.setState({
+                numberOfCrossedOff: this.state.numberOfCrossedOff + 1,
+            })
+        }
+        else {
+            this.setState({
+                numberOfCrossedOff: this.state.numberOfCrossedOff - 1,
+            })
+        }
+        return this.state.numberOfCrossedOff;
+    }
+
+    setNumberOfTasksLeft = (numberOfCrossedOff) => {
+        return JSON.parse(localStorage.getItem("lst")).length - numberOfCrossedOff;
+    }
+
 
 
 
@@ -61,6 +80,7 @@ export default class WeeklyList extends Component {
         // console.log(setCategory());
         // let color = setCategory();
         // console.log(color);
+        console.log("From WeeklyList, the number of crossed off: ", this.state.numberOfCrossedOff);
         return (
             <div>
                 <h1>Your Weekly Goals</h1>
@@ -74,11 +94,13 @@ export default class WeeklyList extends Component {
                 <ToDoList 
                     item = {this.state.inputText} 
                     toDos = {
-                        (this.state.toDoList.length != 0) ? (this.state.toDoList)
+                        (this.state.toDoList.length !== 0) ? (this.state.toDoList)
                         :([])
                     }
                     setToDos = {this.setToDos}
-                    categoryColor = {this.state.color}/>
+                    categoryColor = {this.state.color}
+                    setNumberOfCrossedOff = {this.setNumberOfCrossedOff}
+                    setNumberOfTasksLeft = {this.setNumberOfTasksLeft}/>
             </div>
         )
     }
