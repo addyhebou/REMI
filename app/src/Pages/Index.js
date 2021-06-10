@@ -23,6 +23,7 @@ export default class Index extends Component {
                         <div>Dance a Lot</div>
                     </GoalSet>
                     <GoalSet title = "Music Creator" color = "EBBD87">
+                        <div>Sharpen YOUR Sound</div>
                         <div>Top-40 Producer</div>
                         <div>Producer Brand</div>
                         <div>Vocal Mixing Skills</div>
