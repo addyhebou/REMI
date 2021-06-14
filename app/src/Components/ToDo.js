@@ -1,10 +1,11 @@
-import React, { useState }from 'react'
+import React, { useEffect, useState }from 'react'
 import DeleteIcon from '@material-ui/icons/Delete';
 
 export default function ToDo({ item, toDos, setToDos, setNumberOfCrossedOff, setNumberOfTasksLeft }) {
 
     // Handles deleting items
     const deleteHandler = () => {
+        if (item.completed === true) setNumberOfTasksLeft(setNumberOfCrossedOff(false));
         let updatedList = toDos.filter((el) => el.id !== item.id);
         setToDos(updatedList);
     };
@@ -34,6 +35,16 @@ export default function ToDo({ item, toDos, setToDos, setNumberOfCrossedOff, set
         console.log(isChecked);
     }
 
+    const setCrosses = () => {
+        console.log('in set Crosses')
+        if (item.completed) {
+            changeLine('line-through');
+        }
+        else {
+            changeLine('none');
+        }
+    }
+
 
     // Marks Tasks as Complete & Crosses Them Off
     const completeTaskFunc = () => {
@@ -42,7 +53,12 @@ export default function ToDo({ item, toDos, setToDos, setNumberOfCrossedOff, set
     }
 
     let color = item['color'];
+
+    useEffect(() => {
+        setCrosses();
+    })
     
+    // setCrosses();
     return (
         <div className = "toDoItem">
             <div className = "thirtyThree">
