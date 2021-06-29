@@ -17,8 +17,8 @@ export default class Index extends Component {
                         <div>Stellar Portfolio</div>
                     </GoalSet>
                     <GoalSet title = "Critically Acclaimed Performer" color = "F59393">
-                        <div>Sing a Lot</div>
-                        <div>Dance a Lot</div>
+                        <div>Develop Vocal Tone</div>
+                        <div>Create Unique Dance Style</div>
                     </GoalSet>
                     <GoalSet title = "Music Creator" color = "EBBD87">
                         <div>Sharpen YOUR Sound</div>
