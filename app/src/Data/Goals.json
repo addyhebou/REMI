@@ -1,5 +1,5 @@
 {
-    "Music Tech CEO": {
+    "Tech CEO": {
         "Tasks":
             {
                 "CS Degree" : {
@@ -47,30 +47,19 @@
     "Critically Acclaimed Performer": {
         "Tasks":
             {
-                "Strasberg Training" : {
+                "Develop Vocal Tone" : {
                     "Steps": [
-                        "Practice Exercises",
-                        "Watch TV Shows/Movies",
-                        "Memorize and Master 4 Monologues",
-                        "Read Plays"
+                        "Daily Vocal Exercises",
+                        "Get Vocal Lessons"
                     ],
                     "SMART Goal": ""
                 },
-                "Film Roles" : {
+                "Create Unique Dance Style" : {
                     "Steps": [
-                        "Check Backstage for Roles"
-                    ],
-                    "SMART Goal": ""
-                },
-                "Sing a Lot" : {
-                    "Steps": [
-                        "Daily Vocal Exercises"
-                    ],
-                    "SMART Goal": ""
-                },
-                "Dance a Lot" : {
-                    "Steps": [
-                        "Stay At It"
+                        "Watch Old Dancers of Different Styles: Bob Fosse, Fred Astaire, etc.",
+                        "Repeat choreography from Les Twins and Kida",
+                        "Journal all your new moves",
+                        "Remember: personality trumps all. Personalize each move with your own personality."
                     ],
                     "SMART Goal": ""
                 }
@@ -151,13 +140,10 @@
                 }, 
                 "Max Streams of Income" : {
                     "Steps": [
-                        "Apply 3 Jobs / Day",
-                        "Work 20+ Hours a Week",
-                        "Post Weekly on YouTube",
-                        "Guitar Lessons",
-                        "Custom Beats",
-                        "Secure free LA housing",
-                        "Get Subletter ASAP"
+                        "Primary: Work & apply for jobs",
+                        "Business: Custom Beats",
+                        "Rental: Continue subleasing",
+                        "Dividend: Invest index funds"
                     ],
                     "SMART Goal": "Raise $3,800 (average case) for the summer and get free housing",
                     "Saint Steph(10) Invest(30) Needs(20) LA(40)":""
@@ -173,16 +159,10 @@
                 },
                 "Live Below Means" : {
                     "Steps": [
-                        "LA Housing – 40%",
                         "Investment – 30%",
+                        "LA Housing – 40%",
                         "Needs – 20%",
                         "Saint Steph – 10%"
-                    ],
-                    "SMART Goal": ""
-                },
-                "Scholarships" : {
-                    "Steps":[
-                        "February to April are Prime Months"
                     ],
                     "SMART Goal": ""
                 }
@@ -197,7 +177,8 @@
                         "Come in an hour early, work through meals, then leave an hour later",
                         "Work at ALL time – no distractions externally (social media, conversations, delaying)",
                         "Do whatever your boss asks you to do immediately",
-                        "Ask for more responsibility every day"
+                        "Ask for more responsibility every day",
+                        "Work out of your room"
                     ],
                     "SMART Goal": "Receive job re-offers from every company I work with for the next available term"
                 },
@@ -217,13 +198,14 @@
                     ],
                     "SMART Goal": "Gain 10 pounds"
                 },
-                "God" : {
-                    "Steps":[
-                        "Gospel Music Nutrition",
-                        "Attend Church 2x Month",
-                        "Pray in Thanks & Service"
+                "Mental Health" : {
+                    "Steps": [
+                        "Go to therapy sessions",
+                        "Track gratitude and achievement with a journal daily (3 items)",
+                        "Outdoor activity (basketball, tennis, camping, hiking, etc.)"
+                        
                     ],
-                    "SMART Goal": ""
+                    "SMART Goal": "Truthfully state words of affirmation on beauty, self-worth, abilities, and my current life"
                 },
                 "Miina" : {
                     "Steps":[

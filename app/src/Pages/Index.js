@@ -17,8 +17,6 @@ export default class Index extends Component {
                         <div>Stellar Portfolio</div>
                     </GoalSet>
                     <GoalSet title = "Critically Acclaimed Performer" color = "F59393">
-                        <div>Strasberg Training</div>
-                        <div>Film Roles</div>
                         <div>Sing a Lot</div>
                         <div>Dance a Lot</div>
                     </GoalSet>
@@ -34,13 +32,12 @@ export default class Index extends Component {
                         <div>Max Streams of Income</div>
                         <div>Invest</div>
                         <div>Live Below Means</div>
-                        <div>Scholarships</div>
                     </GoalSet>
                     <GoalSet title = "Personal Goals" color = "d1a9d4">
                         <div>At-Work Ethic</div>
                         <div>Good Sleep</div>
                         <div>Personal Fitness</div>
-                        <div>God</div>
+                        <div>Mental Health</div>
                         <div>Miina</div>
                         <div>Model Form</div>
                     </GoalSet>
@@ -49,4 +46,15 @@ export default class Index extends Component {
         )
     }
 }
+
+/*
+
+    SMART
+    S: Specific (exactly what you wanna attain)
+    M: Measurable (how to track it)
+    A: Attainable (steps to achieve)
+    R: Realistic (is it possible)
+    T: Time Bound (deadline)
+
+*/
 
