@@ -5,12 +5,11 @@ import Navbar from '../Components/NavbarIcons'
 
 export default class Index extends Component {
     render() {
-        console.log("hollywood cole");
         return (
             <div>
                 <Navbar />
                 <div className = "GoalArray">
-                    <GoalSet className = "GoalSet" title = "Music Tech CEO" color = "AFD8EF">
+                    <GoalSet title = "Tech CEO" className = "GoalSet" color = "AFD8EF">
                         <div>Develop SoundGood</div>
                         <div>CS Degree</div>
                         <div>Intern/Work</div>

@@ -2,6 +2,12 @@
     "Tech CEO": {
         "Tasks":
             {
+                "Develop SoundGood" : {
+                    "Steps": [
+                        "Stay on Top of Software Engineering"
+                    ],
+                    "SMART Goal": "Perfect all assignments in Software Engineering and Design Project"
+                }, 
                 "CS Degree" : {
                     "Steps": [
                         "Attend All Classes",
@@ -34,12 +40,6 @@
                         "Jin's UI"
                     ],
                     "SMART Goal": "Add 5 Strong Interactive Web Apps"
-                },
-                "Develop SoundGood" : {
-                    "Steps": [
-                        "Stay on Top of Software Engineering"
-                    ],
-                    "SMART Goal": "Perfect all assignments in Software Engineering and Design Project"
                 }
             }
     },
