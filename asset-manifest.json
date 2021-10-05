@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/2021-Goals/static/css/main.b36b92cb.chunk.css",
-    "main.js": "/2021-Goals/static/js/main.9388d196.chunk.js",
-    "main.js.map": "/2021-Goals/static/js/main.9388d196.chunk.js.map",
+    "main.js": "/2021-Goals/static/js/main.f50faa82.chunk.js",
+    "main.js.map": "/2021-Goals/static/js/main.f50faa82.chunk.js.map",
     "runtime-main.js": "/2021-Goals/static/js/runtime-main.c180cf77.js",
     "runtime-main.js.map": "/2021-Goals/static/js/runtime-main.c180cf77.js.map",
     "static/js/2.48beb349.chunk.js": "/2021-Goals/static/js/2.48beb349.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.c180cf77.js",
     "static/js/2.48beb349.chunk.js",
     "static/css/main.b36b92cb.chunk.css",
-    "static/js/main.9388d196.chunk.js"
+    "static/js/main.f50faa82.chunk.js"
   ]
 }
