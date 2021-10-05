@@ -105,7 +105,8 @@
           "Add unsecured credit card after 6 months",
           "Use a small utilization rate (<30%) of credit given to you",
           "Have a mix of credit (mortgage, car loans)",
-          "Don't make a lot of inquiries"
+          "Don't make a lot of inquiries",
+          "Check score bi-weekly"
         ],
         "SMART Goal": "Achieve a credit score of 700+ by 2022, 750 by 2023"
       },
@@ -129,6 +130,7 @@
       },
       "Live Below Means": {
         "Steps": [
+          "Review statements bi-weekly: challenge to lower expenses every time",
           "Investment / Real Estate – 30%",
           "Saint Steph – 30%",
           "Needs – 30%",
