@@ -14,7 +14,7 @@
       "SDE Job": {
         "Steps": [
           "Read CSCI Book Cover to Cover",
-          "Grind LeetCode",
+          "Grind LeetCode 2hrs/day",
           "Run 5+ Mock Interviews / month",
           "Scour for referrals",
           "Apply to 10 jobs/week"
@@ -27,7 +27,7 @@
   "Critically Acclaimed Performer": {
     "Tasks": {
       "Develop Vocal Tone": {
-        "Steps": ["Daily Vocal Exercises", "Get Vocal Lessons"],
+        "Steps": ["2 Hrs Every Other Day", "Vocal Lessons"],
         "SMART Goal": ""
       },
       "Create Unique Dance Style": {
