@@ -61,13 +61,7 @@ export default class WeeklyList extends Component {
     this.setState({
       toDoList: JSON.parse(localStorage.getItem('lst')),
       length: this.setNumberOfTasksLeft(this.state.numberOfCrossedOff),
-      // length: JSON.parse(localStorage.getItem("lst")).length,
     });
-    // console.log("lst parameter", lst)
-    // console.log("this.state.toDoList", this.state.toDoList)
-    // console.log("Localstorage lst: ", localStorage.getItem("lst"))
-    // console.log("localstorage lst back as an object", JSON.parse(localStorage.getItem("lst")))
-    // console.log("Type of this.state.toDoList", typeof this.state.toDoList)
   };
 
   setCategory = (category) => {
