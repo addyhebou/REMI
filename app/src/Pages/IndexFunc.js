@@ -9,7 +9,7 @@ export default function IndexFunc() {
   return (
     <div>
       <Navbar />
-      <div className='goalArray'>
+      <div className="GoalArray">
         {categories.map((c) => {
           return <GoalSetFunc category={c} />;
         })}

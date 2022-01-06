@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import StepFunc from '../Components/StepFunc';
+import '../GoalPageFunc.scss';
 const lib = require('../Data/goalTable');
 
 export default function GoalPageFunc() {
@@ -10,10 +11,17 @@ export default function GoalPageFunc() {
   const tasks = lib.goalTable[title][0];
   const [displaySteps, setDisplaySteps] = useState(true);
   const [selected, setSelected] = useState('');
-
+  const [showAll, setShowAll] = useState(false);
   return (
-    <div>
+    <div className="goalPage">
       <h1>{title}</h1>
+      <button
+        onClick={() => {
+          setShowAll(!showAll);
+        }}
+      >
+        {showAll ? 'Showing for all' : 'Showing only for selected task'}
+      </button>
       {tasks.map((task) => {
         const smartGoal = lib.goalTable[title][2][task][0];
         const steps = lib.goalTable[title][2][task][1];
@@ -24,12 +32,13 @@ export default function GoalPageFunc() {
                 setDisplaySteps(!displaySteps);
                 setSelected(e.target.innerHTML);
               }}
+              className="Task Task_Mobile"
             >
               {task}
             </h2>
-            {task === selected && displaySteps && (
+            {(showAll || task === selected) && displaySteps && (
               <div>
-                <p>{smartGoal}</p>
+                <p className="SMARTGoal">{smartGoal}</p>
                 {steps.map((step) => {
                   return <StepFunc step={step} />;
                 })}

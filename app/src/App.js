@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
+    <div className="App">
       {loading ? (
         <div>
           <LoadScreen />
@@ -36,11 +36,11 @@ function App() {
       ) : (
         <Router>
           <Switch>
-            <Route exact path='/goal' component={GoalPageFunc} />
-            <Route exact path='/weeklyList' component={WeeklyList} />
-            <Route exact path='/shuffleTasks' component={ShuffleTasks} />
+            <Route exact path="/goal" component={GoalPageFunc} />
+            <Route exact path="/weeklyList" component={WeeklyList} />
+            <Route exact path="/shuffleTasks" component={ShuffleTasks} />
             <Route component={IndexFunc} />
-            <Redirect to='/404' />
+            <Redirect to="/404" />
           </Switch>
         </Router>
       )}

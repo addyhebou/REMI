@@ -24,9 +24,9 @@ export default function GoalSetFunc(props) {
   const [randomYPosition, setRandomYPosition] = useState(getRandomYPosition());
 
   return (
-    <div className='floater'>
+    <div className="floater">
       <Link
-        to='/goal'
+        to="/goal"
         style={{
           textDecoration: 'none',
           color: 'black',
@@ -39,7 +39,7 @@ export default function GoalSetFunc(props) {
         }}
       >
         <h2
-          className='Title'
+          className="Title"
           style={{
             backgroundColor: color,
             transform: 'translate(0, ' + randomYPosition + 'px)',
@@ -49,7 +49,7 @@ export default function GoalSetFunc(props) {
         </h2>
       </Link>
       {tasks.map((task) => {
-        return <h3 className='task'>{task}</h3>;
+        return <h3 className="Task">{task}</h3>;
       })}
     </div>
   );
