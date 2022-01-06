@@ -24,9 +24,7 @@ export default class WeeklyList extends Component {
     };
     const url = 'https://ancient-coast-78698.herokuapp.com/';
     const response = await fetch(url);
-    console.log(response);
     const data = await response.json();
-    console.log(data);
     data.forEach((element) => {
       element['id'] = Math.random() * 1000;
       if (element['category'] === 'Music Creator') element['color'] = '#EBBD87';
@@ -40,7 +38,6 @@ export default class WeeklyList extends Component {
     this.setState({
       toDoList: data,
     });
-    console.log(data);
   }
 
   setColor = (hexCode) => {
@@ -92,14 +89,6 @@ export default class WeeklyList extends Component {
   };
 
   render() {
-    // console.log(setCategory());
-    // let color = setCategory();
-    // console.log(color);
-    console.log(
-      'From WeeklyList, the number of crossed off: ',
-      this.state.numberOfCrossedOff
-    );
-    console.log(this.state.toDoList);
     return (
       <div>
         <h1>Your Weekly Goals</h1>

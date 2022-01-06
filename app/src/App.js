@@ -14,6 +14,7 @@ import React, { useState, useEffect } from 'react';
 import RingLoader from 'react-spinners/RingLoader';
 import LoadScreen from '../src/Components/LoadScreen';
 import IndexFunc from './Pages/IndexFunc';
+import GoalPageFunc from './Pages/GoalPageFunc';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -35,12 +36,10 @@ function App() {
       ) : (
         <Router>
           <Switch>
-            <Route exact path='/' component={IndexFunc} />
-            <Route exact path='/goal' component={GoalPage} />
+            <Route exact path='/goal' component={GoalPageFunc} />
             <Route exact path='/weeklyList' component={WeeklyList} />
             <Route exact path='/shuffleTasks' component={ShuffleTasks} />
             <Route component={IndexFunc} />
-            {/* <Route component = { Error }/> */}
             <Redirect to='/404' />
           </Switch>
         </Router>

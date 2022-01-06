@@ -1,17 +1,12 @@
 import React from 'react';
-import { useState, useEffect, Link } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../GoalSetFunc.scss';
+const lib = require('../Data/goalTable');
 
 export default function GoalSetFunc(props) {
-  const goalTable = {
-    'Tech CEO': [['CS Degree', 'SDE Job'], '#AFD8EF'],
-    'Critically Acclaimed': [['CS Degree', 'SDE Job'], '#F59393'],
-    'Music Creator': [['CS Degree', 'SDE Job'], '#EBBD87'],
-    'Financial Freedom': [['CS Degree', 'SDE Job'], '#C0EFAF'],
-    Personal: [['CS Degree', 'SDE Job'], '#D1A9D4'],
-  };
-
+  const goalTable = lib.goalTable;
   const [category, setCategory] = useState(props.category);
-  console.log(category);
   const getGoals = () => {
     return goalTable[category][0];
   };
@@ -24,18 +19,38 @@ export default function GoalSetFunc(props) {
     Math.floor(Math.random() * 10 + 1);
   };
 
-  const [color, setColor] = useState(getColor(props.category));
+  const [color, setColor] = useState(getColor(category));
   const [tasks, setTasks] = useState(getGoals());
   const [randomYPosition, setRandomYPosition] = useState(getRandomYPosition());
 
   return (
     <div className='floater'>
+      <Link
+        to='/goal'
+        style={{
+          textDecoration: 'none',
+          color: 'black',
+        }}
+        to={{
+          pathname: '/goal',
+          state: {
+            title: category,
+          },
+        }}
+      >
+        <h2
+          className='Title'
+          style={{
+            backgroundColor: color,
+            transform: 'translate(0, ' + randomYPosition + 'px)',
+          }}
+        >
+          {category}
+        </h2>
+      </Link>
       {tasks.map((task) => {
-        return <h2 className='task'>{task}</h2>;
+        return <h3 className='task'>{task}</h3>;
       })}
-      {/* <Link to='/goal'> */}
-      {/* <h2 style={{ backgroundColor: { color } }}>{category}</h2> */}
-      {/* </Link> */}
     </div>
   );
 }

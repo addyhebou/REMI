@@ -1,15 +1,11 @@
 import React from 'react';
 import Navbar from '../Components/NavbarIcons';
 import GoalSetFunc from '../Components/GoalSetFunc';
+import '../IndexFunc.scss';
+const lib = require('../Data/goalTable');
 
 export default function IndexFunc() {
-  const categories = [
-    'Tech CEO',
-    'Critically Acclaimed',
-    'Music Creator',
-    'Financial Freedom',
-    'Personal',
-  ];
+  const categories = lib.categories;
   return (
     <div>
       <Navbar />
