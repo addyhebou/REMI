@@ -48,9 +48,9 @@ export default function GoalSetFunc(props) {
           {category}
         </h2>
       </Link>
-      {tasks.map((task) => {
+      {/* {tasks.map((task) => {
         return <h3 className="Task">{task}</h3>;
-      })}
+      })} */}
     </div>
   );
 }

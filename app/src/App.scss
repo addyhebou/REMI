@@ -6,9 +6,9 @@
 //   font-family: SF;
 // }
 
-@media only screen and (max-width: 768px){
-  .App{
-  // ONLY MOBILES
+@media only screen and (max-width: 768px) {
+  .App {
+    // ONLY MOBILES
     align-items: center;
     display: flex;
     justify-content: center;
@@ -21,16 +21,15 @@
     // height: 100vh;
   }
 
-  .Caption{
+  .Caption {
     font-weight: lighter;
     font-size: small;
     font-style: italic;
   }
 
-
   $randomNumber: random(3);
 
-  .Floater{
+  .Floater {
     animation-name: floating;
     animation-duration: 5s;
     // animation-duration: $randomNumber + s;
@@ -38,29 +37,34 @@
     animation-timing-function: ease-in-out;
   }
 
-
-  @keyframes floating{
-    0% { transform: translate(0, 0px);}
-    50% { transform: translate(0, 15px);}
-    100% { transform: translate(0, -0px);}
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
   }
 
-  .GoalArray{
+  .GoalArray {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
 
-  h1{
+  h1 {
     font-weight: lighter;
     font-size: 64px;
   }
 
-  .Icon{
+  .Icon {
     width: 5vh;
   }
 
-  .Loader{
+  .Loader {
     animation-iteration-count: 1;
     height: 100vh;
     display: flex;
@@ -69,7 +73,7 @@
     width: 100%;
   }
 
-  .navIcons{
+  .navIcons {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
@@ -80,37 +84,35 @@
     0% {
       opacity: 0;
     }
-  
+
     25% {
       opacity: 1;
     }
-  
+
     75% {
       opacity: 1;
     }
-  
+
     100% {
       opacity: 0;
     }
   }
 
-
-
-  .Task{
+  .Task {
     background-color: #e7e7e7;
     border-radius: 15px;
     box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
     display: none;
     margin: 15px 40px;
-    padding: 1px 0px ;
+    padding: 1px 0px;
     text-align: center;
   }
 
-  .Task_Mobile{
+  .Task_Mobile {
     display: block;
   }
 
-  .Step{
+  .Step {
     // background-color: #f5f5f5;
     // border-radius: 15px;
     // box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
@@ -120,7 +122,7 @@
     text-align: center;
   }
 
-  .Title{
+  .Title {
     background-color: beige;
     border-radius: 15px;
     margin: 15px 40px;
@@ -128,9 +130,9 @@
     text-align: center;
   }
 
-  .toDoItem{
+  .toDoItem {
     align-items: center;
-    background: #F5F5F5;
+    background: #f5f5f5;
     border-radius: 12px;
     box-shadow: 13px 16px 29px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -141,36 +143,34 @@
     width: 236px;
   }
 
-  .thirtyThree > .colorBar{
-    background: #EBBD87;
+  .thirtyThree > .colorBar {
+    background: #ebbd87;
     border-radius: 7px;
     height: 38px;
     // margin: 30px;
     width: 7px;
   }
 
-  .thirtyThree > li{
-    color: #59370F;
+  .thirtyThree > li {
+    color: #59370f;
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     list-style: none;
-
   }
 
-
-  .toDoItem > .checkButton{
-    background: #FFFFFF;
-    border: 2px solid #EBBD87;
+  .toDoItem > .checkButton {
+    background: #ffffff;
+    border: 2px solid #ebbd87;
     border-radius: 100%;
     box-sizing: border-box;
     width: 23px;
     height: 23px;
   }
 
-  .thirtyThree{
+  .thirtyThree {
     align-items: center;
     // border: 2px solid purple;
     display: flex;
@@ -182,9 +182,9 @@
     margin: 0px 12px;
   }
 }
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 769px) {
   // DESKTOP VIEW
-  .App{
+  .App {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -197,7 +197,7 @@
 
   $randomNumber: random(3);
 
-  .Floater{
+  .Floater {
     animation-name: floating;
     animation-duration: 5s;
     // animation-duration: $randomNumber + s;
@@ -205,44 +205,50 @@
     animation-timing-function: ease-in-out;
   }
 
-
-  @keyframes floating{
-    0% { transform: translate(0, 0px);}
-    50% { transform: translate(0, 15px);}
-    100% { transform: translate(0, -0px);}
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
   }
 
-  .GoalArray{
+  .GoalArray {
     display: flex;
     justify-content: space-evenly;
   }
 
-  h1{
+  h1 {
     font-weight: lighter;
     font-size: 64px;
   }
 
-  .Icon{
+  .Icon {
     width: 4ch;
   }
-  
-  .NavbarIcons{
+
+  .NavbarIcons {
     display: flex;
     height: 160px;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
-  .navTitle{
-    flex: 0.50;
+  .navTitle {
+    flex: 0.5;
   }
-  
-  .navIcons{
+
+  .navIcons {
     display: flex;
     justify-content: space-evenly;
     flex: 0.25;
   }
 
-  .Loader{
+  .Loader {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -264,16 +270,16 @@
     }
   }
 
-  .Task{
+  .Task {
     background-color: #e7e7e7;
     border-radius: 15px;
     box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
     margin: 15px 40px;
-    padding: 1px 0px ;
+    padding: 1px 0px;
     text-align: center;
   }
 
-  .SMARTGoal{
+  .SMARTGoal {
     border-top: 1px solid rgb(133, 133, 133);
     border-bottom: 1px solid rgb(133, 133, 133);
     color: rgb(133, 133, 133);
@@ -282,7 +288,7 @@
     padding: 20px;
   }
 
-  .Step{
+  .Step {
     // background-color: #f5f5f5;
     // border-radius: 15px;
     // box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
@@ -292,7 +298,7 @@
     text-align: center;
   }
 
-  .Title{
+  .Title {
     background-color: beige;
     border-radius: 15px;
     margin: 15px 40px;
@@ -300,9 +306,9 @@
     text-align: center;
   }
 
-  .toDoItem{
+  .toDoItem {
     align-items: center;
-    background: #F5F5F5;
+    background: #f5f5f5;
     border-radius: 12px;
     box-shadow: 13px 16px 29px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -312,28 +318,27 @@
     width: 236px;
   }
 
-  .thirtyThree > .colorBar{
-    background: #EBBD87;
+  .thirtyThree > .colorBar {
+    background: #ebbd87;
     border-radius: 7px;
     height: 38px;
     width: 7px;
   }
 
-  .thirtyThree > li{
+  .thirtyThree > li {
     list-style: none;
   }
 
-
-  .toDoItem > .checkButton{
-    background: #FFFFFF;
-    border: 2px solid #EBBD87;
+  .toDoItem > .checkButton {
+    background: #ffffff;
+    border: 2px solid #ebbd87;
     border-radius: 100%;
     box-sizing: border-box;
     width: 23px;
     height: 23px;
   }
 
-  .thirtyThree{
+  .thirtyThree {
     align-items: center;
     // border: 2px solid purple;
     display: flex;

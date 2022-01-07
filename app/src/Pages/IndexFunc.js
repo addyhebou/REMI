@@ -1,18 +1,16 @@
 import React from 'react';
 import Navbar from '../Components/NavbarIcons';
-import GoalSetFunc from '../Components/GoalSetFunc';
 import '../IndexFunc.scss';
-const lib = require('../Data/goalTable');
+import WelcomeFunc from '../Components/WelcomeFunc';
+import GoalArray from '../Components/GoalArray';
 
 export default function IndexFunc() {
-  const categories = lib.categories;
   return (
     <div>
       <Navbar />
-      <div className="GoalArray">
-        {categories.map((c) => {
-          return <GoalSetFunc category={c} />;
-        })}
+      <div className="main">
+        <WelcomeFunc />
+        <GoalArray />
       </div>
     </div>
   );

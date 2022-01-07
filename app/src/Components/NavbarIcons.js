@@ -6,14 +6,12 @@ import { Link } from 'react-router-dom';
 
 export default function NavbarIcons() {
   return (
-    <div className='NavbarIcons'>
-      <div class='navIcons'></div>
-      <div class='navTitle'>
-        <h1>
-          2022<strong>Goals</strong>
-        </h1>
+    <div className="NavbarIcons">
+      <div class="navIcons"></div>
+      <div class="navTitle">
+        <h1>R.E.M.I</h1>
       </div>
-      <div class='navIcons'>
+      <div class="navIcons">
         <Link to={{ pathname: '/weeklyList' }}>
           <Clipboard />
         </Link>
