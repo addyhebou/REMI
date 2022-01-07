@@ -1,30 +1,46 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import '../WelcomeFunc.scss';
+import ToDoPreview from './ToDoPreview';
 
 export default function WelcomeFunc() {
   useEffect(async () => {
-    const res = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${appID}&q=${city}&aqi=no`
-    );
-    const json = await res.json();
-    setTemp(json['current']['temp_f']);
-    setCondition(json['current']['condition']['text'].toLowerCase());
-    setIcon(`http://${json['current']['condition']['icon'].slice(2)}`);
-    setFeel(json['current']['feelslike_f']);
-    const date = new Date();
-    const hour = date.getHours();
-    const val = hour >= 12 ? (hour >= 18 ? 'Evening' : 'Afternoon') : 'Morning';
-    setTimeOfDay(val);
+    try {
+      let res = await fetch(
+        `http://api.weatherapi.com/v1/forecast.json?key=${appID}&q=${city}&aqi=no`
+      );
+      if (!res.ok) throw new Error('HTTP error');
+      let json = await res.json();
+      setTemp(json['current']['temp_f']);
+      setCondition(json['current']['condition']['text'].toLowerCase());
+      setIcon(`http://${json['current']['condition']['icon'].slice(2)}`);
+      setFeel(json['current']['feelslike_f']);
+      const date = new Date();
+      const hour = date.getHours();
+      const val =
+        hour >= 12 ? (hour >= 17 ? 'evening' : 'afternoon') : 'morning';
+      setTimeOfDay(val);
+      res = await fetch(`http://ip-api.com/json/`);
+      if (!res.ok) throw new Error('HTTP error');
+      json = await res.json();
+      console.log(json);
+      setCity(json['city']);
+      setRegion(json['region']);
+    } catch (e) {
+      console.log(e);
+    }
   }, []);
 
   const [temp, setTemp] = useState(null);
   const [feel, setFeel] = useState(null);
   const [condition, setCondition] = useState(null);
   const [icon, setIcon] = useState(null);
-  const [timeOfDay, setTimeOfDay] = useState(null);
+  const [timeOfDay, setTimeOfDay] = useState('day');
+  const [city, setCity] = useState('Yaoundé');
+  const [region, setRegion] = useState('NY');
 
-  const city = 'New York';
+  const googleAPIkey = 'AIzaSyDJSHGuzw6L73Z1uC-b8yBW5jmY8CJ7_98';
+
   const appID = 'f33518e9773745fdafd61453220701';
 
   const message =
@@ -38,13 +54,24 @@ export default function WelcomeFunc() {
   return (
     <div className="welcome">
       <h1>Good {timeOfDay}, Addy.</h1>
-      <p>
-        The weather in {city} is currently {temp}º, but it feels like {feel}.
-      </p>
-      <p> The condition is {condition}. </p>
-      <p>{message}</p>
-      <img src={icon} />
-      <p>Here are the items for you to do today</p>
+      {temp ? (
+        <div>
+          <p>
+            The weather in {city}, {region} is currently {temp}º, but it feels
+            like {feel}º.
+          </p>
+          <p> The condition is {condition}. </p>
+          <p>{message}</p>
+          <img src={icon} />
+          <p>Here are the items for you to do today:</p>
+          <ToDoPreview />
+        </div>
+      ) : (
+        <p>
+          No information on the weather & your to-do list right now... might
+          wanna check your Internet
+        </p>
+      )}
     </div>
   );
 }
