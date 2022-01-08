@@ -6,11 +6,17 @@ import ToDoPreview from './ToDoPreview';
 export default function WelcomeFunc() {
   useEffect(async () => {
     try {
-      let res = await fetch(
+      let res = await fetch(`http://ip-api.com/json/`);
+      if (!res.ok) throw new Error('HTTP error - ip-api');
+      let json = await res.json();
+      setCity(json['city']);
+      setRegion(json['region']);
+      let city = json['city'];
+      res = await fetch(
         `http://api.weatherapi.com/v1/forecast.json?key=${appID}&q=${city}&aqi=no`
       );
-      if (!res.ok) throw new Error('HTTP error');
-      let json = await res.json();
+      if (!res.ok) throw new Error('HTTP error – weatherapi');
+      json = await res.json();
       setTemp(json['current']['temp_f']);
       setCondition(json['current']['condition']['text'].toLowerCase());
       setIcon(`http://${json['current']['condition']['icon'].slice(2)}`);
@@ -20,12 +26,6 @@ export default function WelcomeFunc() {
       const val =
         hour >= 12 ? (hour >= 17 ? 'evening' : 'afternoon') : 'morning';
       setTimeOfDay(val);
-      res = await fetch(`http://ip-api.com/json/`);
-      if (!res.ok) throw new Error('HTTP error');
-      json = await res.json();
-      console.log(json);
-      setCity(json['city']);
-      setRegion(json['region']);
     } catch (e) {
       console.log(e);
     }
@@ -36,10 +36,8 @@ export default function WelcomeFunc() {
   const [condition, setCondition] = useState(null);
   const [icon, setIcon] = useState(null);
   const [timeOfDay, setTimeOfDay] = useState('day');
-  const [city, setCity] = useState('Yaoundé');
-  const [region, setRegion] = useState('NY');
-
-  const googleAPIkey = 'AIzaSyDJSHGuzw6L73Z1uC-b8yBW5jmY8CJ7_98';
+  const [city, setCity] = useState('');
+  const [region, setRegion] = useState('');
 
   const appID = 'f33518e9773745fdafd61453220701';
 
