@@ -48,7 +48,7 @@ export default function WelcomeFunc() {
       ) : (
         <p>
           No information on the weather & your to-do list right now... might
-          wanna check your Internet
+          wanna check your Internet...
         </p>
       )}
     </div>
