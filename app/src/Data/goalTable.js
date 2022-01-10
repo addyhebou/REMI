@@ -200,6 +200,13 @@ const financialGoals = {
     'Save at least $3200 for first month and security',
     ['Get the relocation bonus'],
   ],
+  'High Credit Score': [
+    'Earn a 750+ credit score',
+    [
+      'Clear out credit card every Sunday - keep below 30% usage',
+      'Get two travel cards (January, June)',
+    ],
+  ],
 };
 
 const categories = [

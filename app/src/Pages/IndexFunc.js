@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/NavbarIcons';
 import '../IndexFunc.scss';
-import WelcomeFunc from '../Components/WelcomeFunc';
+import Welcome from '../Components/Welcome';
 import GoalArray from '../Components/GoalArray';
 
 export default function IndexFunc() {
@@ -9,7 +9,7 @@ export default function IndexFunc() {
     <div>
       <Navbar />
       <div className="main">
-        <WelcomeFunc />
+        <Welcome />
         <GoalArray />
       </div>
     </div>
