@@ -22,6 +22,7 @@ export default function List() {
         <Card />
         <Card />
         <Card />
+        <Card />
         <InputContainer />
       </Paper>
     </div>
