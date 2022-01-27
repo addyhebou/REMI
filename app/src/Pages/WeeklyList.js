@@ -1,7 +1,8 @@
 import React, { Component, setState } from 'react';
 import Form from '../Components/Form';
 import ToDoList from '../Components/ToDoList';
-import '../App.scss';
+import NavbarIcons from '../Components/NavbarIcons';
+import '../Styles/App.scss';
 
 export default class WeeklyList extends Component {
   constructor(props) {
@@ -91,6 +92,7 @@ export default class WeeklyList extends Component {
   render() {
     return (
       <div>
+        <NavbarIcons />
         <h1>Your Weekly Goals</h1>
         <h3>Total Tasks: {this.state.length}</h3>
         <Form

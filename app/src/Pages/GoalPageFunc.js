@@ -2,8 +2,9 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import StepFunc from '../Components/StepFunc';
-import '../GoalPageFunc.scss';
-const lib = require('../Data/goalTable');
+import '../Styles/GoalPageFunc.scss';
+import NavbarIcons from '../Components/NavbarIcons';
+const lib = require('../Constants/goalTable');
 
 export default function GoalPageFunc() {
   const location = useLocation();
@@ -14,6 +15,7 @@ export default function GoalPageFunc() {
   const [showAll, setShowAll] = useState(false);
   return (
     <div className="goalPage">
+      <NavbarIcons />
       <h1>{title}</h1>
       <button
         onClick={() => {

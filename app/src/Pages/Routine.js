@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import '../Routine.scss';
-const lib = require('../Functions/getRoutine');
+import '../Styles/Routine.scss';
+import NavbarIcons from '../Components/NavbarIcons';
+const lib = require('../Services/getRoutine');
 
 export default function Routine() {
   const [isDay, setIsDay] = useState(true);
@@ -16,6 +17,7 @@ export default function Routine() {
 
   return (
     <div>
+      <NavbarIcons />
       <h1>Routine</h1>
       <div className="main">
         <div>
@@ -26,7 +28,7 @@ export default function Routine() {
         </div>
         <div>
           <ul className="routineContainer">
-            {routine.map((step) => {
+            {routine.map((step, index) => {
               return highlighted === step ? (
                 <li
                   className="routineStep"
@@ -35,7 +37,14 @@ export default function Routine() {
                   {step}
                 </li>
               ) : (
-                <li className="routineStep">{step}</li>
+                <li
+                  className="routineStep"
+                  onClick={() => {
+                    setNum(index);
+                  }}
+                >
+                  {step}
+                </li>
               );
             })}
           </ul>

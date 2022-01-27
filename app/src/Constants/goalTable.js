@@ -131,7 +131,7 @@ const personalGoals = {
       'No more candy (only monthly)',
       'Intake 2800 calories a day (body weight * 16)',
       'Fuel up with 40/30/30 protein/carbs/fats daily',
-      'Consume 87.5 pounds of protein daily (half of body weight) in 4 meals',
+      'Consume 87.5 grams of protein daily (half of body weight) in 4 meals',
       'Skip processed foods',
       '4 Days of strength training (chest, back, leg, chest)',
       'Go for 8-15 reps in full - more reps is better than higher weights',

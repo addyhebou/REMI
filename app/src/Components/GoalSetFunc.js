@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../GoalSetFunc.scss';
-const lib = require('../Data/goalTable');
+import '../Styles/GoalSetFunc.scss';
+const lib = require('../Constants/goalTable');
 
 export default function GoalSetFunc(props) {
   const goalTable = lib.goalTable;
@@ -48,9 +48,6 @@ export default function GoalSetFunc(props) {
           {category}
         </h2>
       </Link>
-      {/* {tasks.map((task) => {
-        return <h3 className="Task">{task}</h3>;
-      })} */}
     </div>
   );
 }

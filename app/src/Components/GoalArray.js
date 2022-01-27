@@ -1,6 +1,6 @@
 import React from 'react';
 import GoalSetFunc from './GoalSetFunc';
-const lib = require('../Data/goalTable');
+const lib = require('../Constants/goalTable');
 
 export default function GoalArray() {
   const categories = lib.categories;

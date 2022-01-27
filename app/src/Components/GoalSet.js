@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../App.scss';
+import '../Styles/App.scss';
 
 export default class GoalSet extends Component {
   constructor(props) {
@@ -33,7 +33,7 @@ export default class GoalSet extends Component {
 
   render() {
     return (
-      <div className='Floater'>
+      <div className="Floater">
         <Link
           style={{
             textDecoration: 'none',
@@ -48,7 +48,7 @@ export default class GoalSet extends Component {
           }}
         >
           <h2
-            className='Title'
+            className="Title"
             style={{
               backgroundColor: '#' + this.state.backgroundColor,
               transform: 'translate(0, ' + this.state.randomYPosition + 'px)',
@@ -59,7 +59,7 @@ export default class GoalSet extends Component {
         </Link>
         {this.state.tasks.map((task) => {
           return (
-            <div className='Task'>
+            <div className="Task">
               <h2>{task}</h2>
             </div>
           );

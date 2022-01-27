@@ -1,4 +1,4 @@
-import './App.scss';
+import './Styles/App.scss';
 import './Pages/Index';
 import {
   BrowserRouter as Router,
@@ -17,8 +17,10 @@ import IndexFunc from './Pages/IndexFunc';
 import GoalPageFunc from './Pages/GoalPageFunc';
 import Routine from './Pages/Routine';
 import alanBtn from '@alan-ai/alan-sdk-web';
+import Productivity from './Pages/Productivity';
+import NavbarIcons from './Components/NavbarIcons';
 
-const lib = require('./Functions/getWeather');
+const lib = require('./Services/getWeather');
 
 function App() {
   useEffect(async () => {
@@ -53,6 +55,7 @@ function App() {
             <Route exact path="/weeklyList" component={WeeklyList} />
             <Route exact path="/shuffleTasks" component={ShuffleTasks} />
             <Route exact path="/routine" component={Routine} />
+            <Route exact path="/productivity" component={Productivity} />
             <Route component={IndexFunc} />
             <Redirect to="/404" />
           </Switch>

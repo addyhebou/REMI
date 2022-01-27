@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Step from '../Components/Step';
-import Goals from '../Data/Goals.json';
-import '../App.scss';
+import Goals from '../Constants/Goals.json';
+import '../Styles/App.scss';
 
 export default class GoalPage extends Component {
   constructor(props) {
