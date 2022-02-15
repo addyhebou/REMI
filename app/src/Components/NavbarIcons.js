@@ -1,10 +1,9 @@
 import React from 'react';
-import Clipboard from '../Components/Clipboard';
-import ShuffleCards from '../Components/ShuffleCards';
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import HomeIcon from '@mui/icons-material/Home';
 import PedalBikeIcon from '@mui/icons-material/PedalBike';
+import MoneyIcon from '@mui/icons-material/Money';
 import '../Styles/App.scss';
 import '../Styles/NavbarIcons.scss';
 import { Link } from 'react-router-dom';
@@ -17,7 +16,7 @@ export default function NavbarIcons() {
         <h1>R.E.M.I</h1>
       </div>
       <div class="navIcons">
-        <Link to="/">
+        <Link exact to="/">
           <div>
             <HomeIcon />
           </div>
@@ -35,6 +34,11 @@ export default function NavbarIcons() {
         <Link to="/productivity">
           <div>
             <PedalBikeIcon />
+          </div>
+        </Link>
+        <Link to="/projects">
+          <div>
+            <MoneyIcon />
           </div>
         </Link>
       </div>

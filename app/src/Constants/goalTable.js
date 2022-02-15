@@ -7,8 +7,8 @@ const categoryGoals = {
 }
  */
 const techGoals = {
-  'Digest 10+ startup books': [
-    'Digest 10+ tech startup books by June 15',
+  'Digest 10+ tech books': [
+    'Digest 10+ tech startup/biography books by June 15',
     [
       'Rent out library books',
       'Take notes',
@@ -57,7 +57,7 @@ const musicGoals = {
       'Post Tik Tok Videos twice a week',
       'Throw contests',
       'Master my tech',
-      'Focus on 3 Series: You Only Need X Sounds, Orchestral Hip Hop Beats, Original Beats (Look Mum No Drums)',
+      'Focus on 3 Series: You Only Need X Sounds (Mistiq angle), Orchestral Hip Hop Beats (Tracklib ad angle), Original Beats (Look Mum No Drums angle)',
     ],
   ],
   'Mentor for top 40 producer': [
@@ -65,13 +65,17 @@ const musicGoals = {
     [
       'Come with a portfolio',
       'Go through every contact I possible can to reach them',
+      'Release 50 And The Writer Is Posts by listening to podcasts, notating, and building 2 episodes weekly - 18 starters by April 1',
     ],
   ],
   'Work on 100+ projects': [
-    'Smart Goal',
+    'Work on 100+ projects by hitting at 6-10 projects a month',
     [
       'Remix and reposts songwriters to connect with then',
       'Pitch demos made from type beat tutorials',
+      'Work with everyone - the starter artists, session musicians, movies, and industry folks',
+      'Target publishing companies – then connect via Discord or referral to every writer there',
+      "Collaborate most with those you've already made music with",
     ],
   ],
   'Produce for 5+ major artists': [
@@ -158,8 +162,6 @@ const personalGoals = {
   ],
 };
 
-const accessories = ['Watch', 'Necklace', 'Rings', 'Earrings', 'Hat'];
-
 const financialGoals = {
   'Max streams of income': [
     'Earn $250,000+',
@@ -208,16 +210,6 @@ const financialGoals = {
     ],
   ],
 };
-
-const categories = [
-  'Tech Entrepreneur',
-  'Critically Acclaimed',
-  'Music Creator',
-  'Financial Freedom',
-  'Personal Goals',
-];
-
-module.exports.categories = categories;
 
 const goalTable = {
   'Tech Entrepreneur': [Object.keys(techGoals), '#AFD8EF', techGoals],

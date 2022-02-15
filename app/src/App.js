@@ -19,6 +19,7 @@ import Routine from './Pages/Routine';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import Productivity from './Pages/Productivity';
 import NavbarIcons from './Components/NavbarIcons';
+import MusicProjects from './Pages/MusicProjects';
 
 const lib = require('./Services/getWeather');
 
@@ -51,13 +52,13 @@ function App() {
       ) : (
         <Router>
           <Switch>
-            <Route path="/" component={IndexFunc} />
-            <Route exact path="/REMI" component={IndexFunc} />
+            {/* <Route exact path="/REMI" component={IndexFunc} /> */}
             <Route exact path="/goal" component={GoalPageFunc} />
             <Route exact path="/weeklyList" component={WeeklyList} />
             <Route exact path="/shuffleTasks" component={ShuffleTasks} />
             <Route exact path="/routine" component={Routine} />
             <Route exact path="/productivity" component={Productivity} />
+            <Route exact path="/projects" component={MusicProjects} />
             <Route component={IndexFunc} />
             <Redirect to="/404" />
           </Switch>
