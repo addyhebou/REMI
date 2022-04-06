@@ -21,7 +21,7 @@ import Productivity from './Pages/Productivity';
 import NavbarIcons from './Components/NavbarIcons';
 import MusicProjects from './Pages/MusicProjects';
 
-const lib = require('./Services/getWeather');
+// const lib = require('./Services/getWeather');
 
 function App() {
   const getWeather = async () => {

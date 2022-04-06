@@ -51,9 +51,9 @@
 //   await getWeather();
 // };
 
-const weatherResponse = async () => {
-  const data = await getWeather();
-  return `The weather in ${data[0]}, ${data[1]} is currently ${data[2]} degrees, but it feels like ${data[5]} degrees. The condition is ${data[3]}. ${data[7]}.`;
-};
+// const weatherResponse = async () => {
+//   const data = await getWeather();
+//   return `The weather in ${data[0]}, ${data[1]} is currently ${data[2]} degrees, but it feels like ${data[5]} degrees. The condition is ${data[3]}. ${data[7]}.`;
+// };
 
-module.exports.weatherResponse = weatherResponse;
+// module.exports.weatherResponse = weatherResponse;

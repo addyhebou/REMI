@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import '../Styles/WelcomeFunc.scss';
 import ToDoPreview from './ToDoPreview';
-const lib = require('../Services/getWeather');
+// const lib = require('../Services/getWeather');
 
 export default function WelcomeFunc() {
   const getWeather = async () => {
