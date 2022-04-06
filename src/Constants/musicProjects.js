@@ -1,4 +1,4 @@
-const rheaRaj = ['In Your Hands'];
+const rheaRaj = ['In Your Hands, ET SXSW, Venom SXSW'];
 const warrenEgypt = ['Intro', '80s Groove', 'Chemistry'];
 const amirKelly = ['Will'];
 const chanelAlexus = ['Perception'];
