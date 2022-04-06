@@ -38,12 +38,18 @@ const getWeather = async () => {
     // Return all 7 properties
     return [city, region, temp, condition, icon, feel, day, message];
   } catch (e) {
+    console.log('we made it here...');
     console.log(e);
     return;
   }
 };
 
-module.exports.getWeather = getWeather;
+// module.exports.getWeather = await getWeather;
+// module.exports.getWeather = getWeather;
+
+module.exports.getWeather = async function () {
+  await getWeather();
+};
 
 const weatherResponse = async () => {
   const data = await getWeather();
