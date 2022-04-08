@@ -1,0 +1,12 @@
+.goalPage {
+  h2 {
+    transition: all 0.375s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    &:active {
+      transform: scale(1);
+    }
+  }
+}
