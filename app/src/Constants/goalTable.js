@@ -29,16 +29,6 @@ const techGoals = {
     'Release the No. 1 app by March 16 and the music DB app by December 16',
     ['Bi-weekly standups', 'Define subdeadlines for each phase'],
   ],
-  'CS degree': [
-    'Get your degree, young king',
-    [
-      'Check Brightspace for assignments every Sunday',
-      'Clear agenda daily',
-      'Attend ALL classes - no matter what',
-      'Study for classes the way you did for DSA',
-      "Knock out homework the same week it's assigned",
-    ],
-  ],
   'Expand REMI': [
     'Develop voice assistance along with assistance apps for each goal category',
     [
@@ -108,16 +98,6 @@ const performanceGoals = {
       'Learn to Webster front flip',
     ],
   ],
-  'Strongly train as an actor': [
-    'Master an acting method',
-    [
-      'Take classes',
-      'Practice and store in monologues',
-      'Audition for plays',
-      'Perform in plays',
-      'Read plays',
-    ],
-  ],
 };
 const personalGoals = {
   'Develop a solid morning + night routine': [
@@ -179,11 +159,7 @@ const financialGoals = {
       'Meal planning',
       'Cook in bulk',
       'Stop eating out',
-      'No paper towels – get rags',
-      'Run only full loads of laundry',
-      'Air dry laundry',
       'Rent library books',
-      'AirBNB instead of hotel',
       'Shop at Marshalls, Ross, and Burlington',
       'Grocery shop with an inventory of your current load',
     ],
