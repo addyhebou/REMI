@@ -29,16 +29,6 @@ const techGoals = {
     'Release the No. 1 app by March 16 and the music DB app by December 16',
     ['Bi-weekly standups', 'Define subdeadlines for each phase'],
   ],
-  'CS degree': [
-    'Get your degree, young king',
-    [
-      'Check Brightspace for assignments every Sunday',
-      'Clear agenda daily',
-      'Attend ALL classes - no matter what',
-      'Study for classes the way you did for DSA',
-      "Knock out homework the same week it's assigned",
-    ],
-  ],
   'Expand REMI': [
     'Develop voice assistance along with assistance apps for each goal category',
     [
