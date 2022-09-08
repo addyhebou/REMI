@@ -53,34 +53,32 @@ const musicGoals = {
   'Mentor for top 40 producer': [
     'Mentor under a Top 40 producer',
     [
-      'Come with a portfolio',
+      'Build portfolio',
       'Go through every contact I possible can to reach them',
-      'Release 50 And The Writer Is Posts by listening to podcasts, notating, and building 2 episodes weekly - 18 starters by April 1',
+      'Release 10 And The Writer Is Infographics',
+      'Tommy Brown: Build the Champagne Therapy web app',
     ],
   ],
   'Work on 100+ projects': [
     'Work on 100+ projects by hitting at 6-10 projects a month',
     [
-      'Remix and reposts songwriters to connect with then',
       'Pitch demos made from type beat tutorials',
       'Work with everyone - the starter artists, session musicians, movies, and industry folks',
-      'Target publishing companies – then connect via Discord or referral to every writer there',
       "Collaborate most with those you've already made music with",
+      'Send out guitar melodies',
     ],
   ],
   'Produce for 5+ major artists': [
     'Produce for 5+ major artists',
-    ['Follow mentor'],
+    ['Follow mentor', 'Send out guitar melodies'],
   ],
   'Lock in my sound': [
     'Develop a unique sound only recognizable for Saint Steph',
     [
-      'Remake Donda, After Hours, BTI, and MBDTF',
+      'Remake The Weeknd albums: Dawn FM, After Hours, Beauty Behind the Madness',
       'Excessive notes',
       'Make type beats based on remakes',
       'Develop unique danceable drum patterns w unique drum sounds',
-      'Experiment with random drum packs from Reddit, tweaked for sounds you like',
-      'Learn drum sound design',
     ],
   ],
 };
@@ -176,14 +174,11 @@ const financialGoals = {
   ],
   'Buy a house': [
     'Save at least $3200 for first month and security',
-    ['Get the relocation bonus'],
+    ['Get the relocation bonus', "Take notes from JP's role model"],
   ],
   'High Credit Score': [
     'Earn a 750+ credit score',
-    [
-      'Clear out credit card every Sunday - keep below 30% usage',
-      'Get two travel cards (January, June)',
-    ],
+    ['Clear out credit card every Sunday - keep below 30% usage'],
   ],
 };
 
