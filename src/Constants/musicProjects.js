@@ -7,16 +7,22 @@ const rheaRaj = [
   'Oops!',
 ];
 const warrenEgypt = ['Intro', '80s Groove', 'Chemistry'];
-const amirKelly = ['Will'];
+const amirKelly = ['Will', 'CASH K-pop reference'];
 const chanelAlexus = ['Perception'];
 const pitch = ['Einie Meanie', 'Beautiful People', 'Supersonic'];
 const luKala = ['Paris'];
-const brandonRosen = ['Disco Vibe'];
+const brandonRosen = [
+  'Disco Vibe',
+  'Fake Love',
+  'Sentimental Bounce',
+  'Disco Vibe 2',
+];
 const solomon = ['Durag'];
 const nadiaVaeh = ['Trigger Warning'];
 const anza = ['Love We Had'];
 const soumya = ["I'm So Done"];
 const sophia = ['Old Ways'];
+const samBierman = ['Dark Project'];
 
 const musicProjects = {
   'Rhea Raj': rheaRaj,
@@ -31,6 +37,7 @@ const musicProjects = {
   Anza: anza,
   'Sophia Panayiotou': sophia,
   Soumya: soumya,
+  'Sam Bierman': samBierman,
 };
 
 module.exports.musicProjects = musicProjects;
