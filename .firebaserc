@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "remi-337520"
-  }
+    "default": "remi-337520",
+    "REMI": "remi-337520"
+  },
+  "targets": {},
+  "etags": {}
 }
