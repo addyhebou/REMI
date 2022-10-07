@@ -52,7 +52,6 @@ function App() {
       ) : (
         <Router>
           <Switch>
-            {/* <Route exact path="/REMI" component={IndexFunc} /> */}
             <Route exact path="/goal" component={GoalPageFunc} />
             <Route exact path="/weeklyList" component={WeeklyList} />
             <Route exact path="/shuffleTasks" component={ShuffleTasks} />
