@@ -5,15 +5,14 @@ import NavbarIcons from '../Components/NavbarIcons';
 const lib = require('../Services/getRoutine');
 
 export default function Routine() {
-  const [isDay, setIsDay] = useState(true);
+  const isDay = true;
   const routine = isDay ? lib.getRoutine('morning') : lib.getRoutine('evening');
   let [num, setNum] = useState(0);
-  const [steps, setSteps] = useState([]);
   const [highlighted, setHighlighted] = useState(routine[num]);
 
   useEffect(() => {
     setHighlighted(routine[num]);
-  });
+  }, [num, routine]);
 
   return (
     <div>

@@ -59,17 +59,17 @@ export default function ToDo({
 
   // setCrosses();
   return (
-    <div className='toDoItem'>
-      <div className='thirtyThree'>
-        <div className='colorBar' style={{ backgroundColor: color }}></div>
+    <div className="toDoItem">
+      <div className="thirtyThree">
+        <div className="colorBar" style={{ backgroundColor: color }}></div>
         <li style={{ textDecorationLine: isChecked }}>{item.name}</li>
       </div>
-      <div className='thirtyThree'></div>
-      <div className='thirtyThree'>
+      <div className="thirtyThree"></div>
+      <div className="thirtyThree">
         <DeleteIcon onClick={deleteHandler} />
         <input
-          type='checkbox'
-          className='checkButton'
+          type="checkbox"
+          className="checkButton"
           onClick={completeTaskFunc}
         />
       </div>

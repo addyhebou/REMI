@@ -1,24 +1,27 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { getWeather } from '../Services/getWeather';
 import '../Styles/WelcomeFunc.scss';
 import ToDoPreview from './ToDoPreview';
-const lib = require('../Services/getWeather');
 
 export default function WelcomeFunc() {
-  useEffect(async () => {
-    try {
-      const vals = await lib.getWeather();
-      setCity(vals[0]);
-      setRegion(vals[1]);
-      setTemp(vals[2]);
-      setCondition(vals[3]);
-      setIcon(vals[4]);
-      setFeel(vals[5]);
-      setTimeOfDay(vals[6]);
-      setMessage(vals[7]);
-    } catch (e) {
-      console.log(e);
+  useEffect(() => {
+    async function fetchWeather() {
+      try {
+        const vals = getWeather();
+        setCity(vals[0]);
+        setRegion(vals[1]);
+        setTemp(vals[2]);
+        setCondition(vals[3]);
+        setIcon(vals[4]);
+        setFeel(vals[5]);
+        setTimeOfDay(vals[6]);
+        setMessage(vals[7]);
+      } catch (e) {
+        console.log(e);
+      }
     }
+    fetchWeather();
   }, []);
 
   const [temp, setTemp] = useState(null);
@@ -41,7 +44,7 @@ export default function WelcomeFunc() {
           </p>
           <p> The condition is {condition}. </p>
           <p>{message}</p>
-          <img src={icon} />
+          <img src={icon} alt="Weather icon" />
           <p>Here are the items for you to do today:</p>
           <ToDoPreview />
         </div>

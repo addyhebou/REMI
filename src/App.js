@@ -21,21 +21,24 @@ import MusicProjects from './Pages/MusicProjects';
 const lib = require('./Services/getWeather');
 
 function App() {
-  useEffect(async () => {
-    console.log('LISTENING TO JOJI');
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-    alanBtn({
-      key: 'df2d60f277a4c7147f9bdf25551d9a4d2e956eca572e1d8b807a3e2338fdd0dc/stage',
-      onCommand: async (commandData) => {
-        if (commandData.command === 'Good morning')
-          alert('Rise and shine pumpernickel');
-        else if (commandData.command === 'getWeather()')
-          console.log(await lib.weatherResponse());
-      },
-    });
+  useEffect(() => {
+    async function wakeUpAlan() {
+      console.log('LISTENING TO JOJI');
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+      alanBtn({
+        key: 'df2d60f277a4c7147f9bdf25551d9a4d2e956eca572e1d8b807a3e2338fdd0dc/stage',
+        onCommand: async (commandData) => {
+          if (commandData.command === 'Good morning')
+            alert('Rise and shine pumpernickel');
+          else if (commandData.command === 'getWeather()')
+            console.log(await lib.weatherResponse());
+        },
+      });
+    }
+    wakeUpAlan();
   }, []);
 
   const [loading, setLoading] = useState(false);

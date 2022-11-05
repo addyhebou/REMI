@@ -7,34 +7,9 @@ const categoryGoals = {
 }
  */
 const techGoals = {
-  'Digest 10+ tech books': [
-    'Digest 10+ tech startup/biography books by June 15',
-    [
-      'Rent out library books',
-      'Take notes',
-      "Read other people's notes and reviews",
-      'Put wagers of the books after 3 weeks (give up $50)',
-      'Go for 1.5+ books / month',
-    ],
-  ],
-  'Master PERN stack': [
-    'Be able to build simple fullstack apps within an hour',
-    [
-      'Simple apps: To-do lists, onboarding, online ordering for goods',
-      'Enroll in courses (Frontend Masters)',
-      'Take a CSS course (paid or YouTube playlist)',
-    ],
-  ],
-  'Release No. 1 and music DB app': [
-    'Release the No. 1 app by March 16 and the music DB app by December 16',
-    ['Bi-weekly standups', 'Define subdeadlines for each phase'],
-  ],
-  'Expand REMI': [
-    'Develop voice assistance along with assistance apps for each goal category',
-    [
-      'Rebuild and specify clone apps for REMI functionalities from YouTube',
-      'Complete 1 functionality a month',
-    ],
+  'Complete Tommy Brown App': [
+    'Complete the main page and blocking mobile page',
+    [],
   ],
 };
 
@@ -61,12 +36,7 @@ const musicGoals = {
   ],
   'Work on 100+ projects': [
     'Work on 100+ projects by hitting at 6-10 projects a month',
-    [
-      'Pitch demos made from type beat tutorials',
-      'Work with everyone - the starter artists, session musicians, movies, and industry folks',
-      "Collaborate most with those you've already made music with",
-      'Send out guitar melodies',
-    ],
+    ['Pitch demos made from type beat tutorials', 'Send out guitar melodies'],
   ],
   'Produce for 5+ major artists': [
     'Produce for 5+ major artists',
@@ -87,22 +57,13 @@ const performanceGoals = {
     'Become a fire pop singer',
     ['Train with a contemporary vocal teacher'],
   ],
-  'Develop a unique dance style': [
-    'Develop a unique Saint Steph dance style',
-    [
-      'Take dance classses with different instructors',
-      'Configure your mind to learn naturally',
-      'Learn many dance styles from different regions for your pocket: Memphis jooking, Chicago footwork, Afrobeat, Jersey Club, DMV Beat Your Feet, James Brown',
-      'Learn to Webster front flip',
-    ],
-  ],
 };
 const personalGoals = {
   'Develop a solid morning + night routine': [
     'Smart Goal',
     [
       'Wake up 2+ hours before your first appointment',
-      'Hygiene flow: Brush & floss, face wash & moistuizer, sunscreen',
+      'Hygiene flow: Brush & floss, face wash & moistuizer, sunscreen, hair routine',
       'Morning: Hygeine flow, gratitude journaling, gym (only on no morning classes), shower',
       'Night: Hygiene flow',
     ],
@@ -182,7 +143,7 @@ const financialGoals = {
   ],
 };
 
-const goalTable = {
+export const goalTable = {
   'Tech Entrepreneur': [Object.keys(techGoals), '#AFD8EF', techGoals],
   'Critically Acclaimed': [
     Object.keys(performanceGoals),
@@ -193,4 +154,3 @@ const goalTable = {
   'Financial Freedom': [Object.keys(financialGoals), '#C0EFAF', financialGoals],
   'Personal Goals': [Object.keys(personalGoals), '#D1A9D4', personalGoals],
 };
-module.exports.goalTable = goalTable;

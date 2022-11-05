@@ -1,4 +1,4 @@
-import React, { Component, setState } from 'react';
+import React, { Component } from 'react';
 import Form from '../Components/Form';
 import ToDoList from '../Components/ToDoList';
 import NavbarIcons from '../Components/NavbarIcons';
@@ -18,11 +18,6 @@ export default class WeeklyList extends Component {
   }
 
   async componentDidMount() {
-    const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ title: 'React POST Request Example' }),
-    };
     const url = 'https://ancient-coast-78698.herokuapp.com/';
     const response = await fetch(url);
     const data = await response.json();
