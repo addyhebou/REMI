@@ -1,4 +1,4 @@
-const getWeather = async () => {
+export const getWeather = async () => {
   try {
     // Get the city and region
     let res = await fetch(`http://ip-api.com/json/`);
@@ -43,11 +43,7 @@ const getWeather = async () => {
   }
 };
 
-module.exports.getWeather = getWeather;
-
-const weatherResponse = async () => {
+export const weatherResponse = async () => {
   const data = await getWeather();
   return `The weather in ${data[0]}, ${data[1]} is currently ${data[2]} degrees, but it feels like ${data[5]} degrees. The condition is ${data[3]}. ${data[7]}.`;
 };
-
-module.exports.weatherResponse = weatherResponse;

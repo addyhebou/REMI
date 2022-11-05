@@ -6,11 +6,9 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import Index from './Pages/Index';
-import GoalPage from './Pages/GoalPage';
 import WeeklyList from './Pages/WeeklyList';
 import ShuffleTasks from './Pages/ShuffleTasks';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import RingLoader from 'react-spinners/RingLoader';
 import LoadScreen from '../src/Components/LoadScreen';
 import IndexFunc from './Pages/IndexFunc';
@@ -18,13 +16,13 @@ import GoalPageFunc from './Pages/GoalPageFunc';
 import Routine from './Pages/Routine';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import Productivity from './Pages/Productivity';
-import NavbarIcons from './Components/NavbarIcons';
 import MusicProjects from './Pages/MusicProjects';
 
 const lib = require('./Services/getWeather');
 
 function App() {
   useEffect(async () => {
+    console.log('LISTENING TO JOJI');
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
