@@ -7,7 +7,7 @@ export default function GoalArray() {
   return (
     <div className="goalArray">
       <h1>
-        2022 <strong>Goals</strong>
+        2023 <strong>Goals</strong>
       </h1>
       {categories.map((c) => {
         return <GoalSetFunc category={c} />;
