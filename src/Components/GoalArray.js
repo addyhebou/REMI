@@ -1,17 +1,20 @@
 import React from 'react';
 import GoalSetFunc from './GoalSetFunc';
-const lib = require('../Constants/categories.js');
+import { categories } from '../Constants/categories';
+import '../Styles/GoalArray.scss';
 
 export default function GoalArray() {
-  const categories = lib.categories;
   return (
     <div className="goalArray">
       <h1>
         2023 <strong>Goals</strong>
       </h1>
-      {categories.map((c) => {
-        return <GoalSetFunc category={c} />;
-      })}
+      <div className="goalRow">
+        {categories.map((c, i) => {
+          const orientation = i % 2 === 0 ? 'column' : 'column-reverse';
+          return <GoalSetFunc category={c} orientation={orientation} />;
+        })}
+      </div>
     </div>
   );
 }

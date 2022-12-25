@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { getWeather } from '../Services/getWeather';
 import '../Styles/WelcomeFunc.scss';
-import ToDoPreview from './ToDoPreview';
 
 export default function WelcomeFunc() {
   useEffect(() => {
@@ -35,9 +34,10 @@ export default function WelcomeFunc() {
 
   return (
     <div className="welcome">
+      <h1 className="REMITitle">R.E.M.I</h1>
       <h1>Good {timeOfDay}, Addy.</h1>
       {temp ? (
-        <div>
+        <>
           <p>
             The weather in {city}, {region} is currently {temp}º, but it feels
             like {feel}º.
@@ -45,9 +45,7 @@ export default function WelcomeFunc() {
           <p> The condition is {condition}. </p>
           <p>{message}</p>
           <img src={icon} alt="Weather icon" />
-          <p>Here are the items for you to do today:</p>
-          <ToDoPreview />
-        </div>
+        </>
       ) : (
         <p>
           No information on the weather & your to-do list right now... might

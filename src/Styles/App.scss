@@ -12,13 +12,9 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 30px 40px;
     text-align: center;
     animation-name: fade;
     animation-duration: 3000ms;
-    // height: 100vh;
-    padding: 30px 40px;
-    // height: 100vh;
   }
 
   * {
@@ -50,12 +46,6 @@
     100% {
       transform: translate(0, -0px);
     }
-  }
-
-  .GoalArray {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
   }
 
   h1 {
@@ -191,11 +181,9 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 30px 40px;
     text-align: center;
     animation-name: fade;
     animation-duration: 3000ms;
-    padding: 30px 40px;
   }
 
   $randomNumber: random(3);
@@ -220,11 +208,6 @@
     }
   }
 
-  .GoalArray {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
   h1 {
     font-weight: lighter;
     font-size: 64px;
@@ -236,9 +219,9 @@
 
   .NavbarIcons {
     display: flex;
-    height: 160px;
     justify-content: space-evenly;
     align-items: center;
+    margin: 20px auto;
   }
 
   .navTitle {
@@ -292,21 +275,17 @@
   }
 
   .Step {
-    // background-color: #f5f5f5;
-    // border-radius: 15px;
-    // box-shadow: 13px 16px 29px rgba(63, 63, 63, 0.2);
-    // margin: 15px 40px;
-    // padding: 1px 0px ;
     font-weight: normal;
     text-align: center;
   }
 
   .Title {
     background-color: beige;
-    border-radius: 15px;
     margin: 15px 40px;
     padding: 15px;
     text-align: center;
+    box-shadow: 13px 16px 29px rgba(0, 0, 0, 0.15);
+    border-radius: 26px;
   }
 
   .toDoItem {

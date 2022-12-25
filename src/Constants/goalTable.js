@@ -144,13 +144,13 @@ const financialGoals = {
 };
 
 export const goalTable = {
-  'Tech Entrepreneur': [Object.keys(techGoals), '#AFD8EF', techGoals],
-  'Critically Acclaimed': [
+  CEO: [Object.keys(techGoals), '#AFD8EF', techGoals],
+  'Super Producer': [
     Object.keys(performanceGoals),
-    '#F59393',
+    '#F5C293',
     performanceGoals,
   ],
-  'Music Creator': [Object.keys(musicGoals), '#EBBD87', musicGoals],
-  'Financial Freedom': [Object.keys(financialGoals), '#C0EFAF', financialGoals],
-  'Personal Goals': [Object.keys(personalGoals), '#D1A9D4', personalGoals],
+  'Content Creator': [Object.keys(musicGoals), '#FBEC9D', musicGoals],
+  'Property Mogul': [Object.keys(financialGoals), '#C0EFAF', financialGoals],
+  Singer: [Object.keys(personalGoals), '#FECFF4', personalGoals],
 };

@@ -1,0 +1,10 @@
+.goalArray {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .goalRow {
+    display: flex;
+    flex-direction: row;
+  }
+}
