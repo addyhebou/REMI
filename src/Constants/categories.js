@@ -1,9 +1,7 @@
-const categories = [
-  'Tech Entrepreneur',
-  'Critically Acclaimed',
-  'Music Creator',
-  'Financial Freedom',
-  'Personal Goals',
+export const categories = [
+  'Content Creator',
+  'Super Producer',
+  'CEO',
+  'Singer',
+  'Property Mogul',
 ];
-
-module.exports.categories = categories;

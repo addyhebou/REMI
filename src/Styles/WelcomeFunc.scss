@@ -1,3 +1,31 @@
 .welcome {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  p {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 57px;
+
+    color: #000000;
+    margin: 0 auto;
+  }
+
+  .REMITitle {
+    font-size: 96px;
+    line-height: 115px;
+  }
 }

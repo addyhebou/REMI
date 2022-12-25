@@ -3,9 +3,10 @@ Link {
   color: black;
 }
 
-.Title {
-  transition: all 0.375s;
+.GoalSet {
+  transition: all 0.125s;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    cursor: pointer;
   }
 }

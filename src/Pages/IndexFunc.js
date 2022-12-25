@@ -6,12 +6,10 @@ import GoalArray from '../Components/GoalArray';
 
 export default function IndexFunc() {
   return (
-    <div>
+    <div className="IndexFunc">
+      <Welcome />
       <NavbarIcons />
-      <div className="main">
-        <Welcome />
-        <GoalArray />
-      </div>
+      <GoalArray />
     </div>
   );
 }
