@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { getWeather } from '../Services/getWeather';
+import { getWeather } from '../Services/getWeather.ts';
 import '../Styles/WelcomeFunc.scss';
 
 export default function WelcomeFunc() {

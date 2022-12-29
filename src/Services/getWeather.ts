@@ -45,5 +45,5 @@ export const getWeather = async () => {
 
 export const weatherResponse = async () => {
   const data = await getWeather();
-  return `The weather in ${data[0]}, ${data[1]} is currently ${data[2]} degrees, but it feels like ${data[5]} degrees. The condition is ${data[3]}. ${data[7]}.`;
+  return `The weather in ${data?.[0]}, ${data?.[1]} is currently ${data?.[2]} degrees, but it feels like ${data?.[5]} degrees. The condition is ${data?.[3]}. ${data?.[7]}.`;
 };
