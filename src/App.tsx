@@ -17,7 +17,6 @@ import { weatherResponse } from './Services/getWeather';
 function App() {
   useEffect(() => {
     async function wakeUpAlan() {
-      console.log('LISTENING TO JOJI');
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
