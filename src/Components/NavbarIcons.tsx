@@ -2,7 +2,6 @@ import React from 'react';
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import '../Styles/App.scss';
 import '../Styles/NavbarIcons.scss';
-import { Link } from 'react-router-dom';
 import { Brush, Home, ShoppingCart } from '@material-ui/icons';
 
 export default function NavbarIcons(props: {

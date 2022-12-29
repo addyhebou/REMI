@@ -1,4 +1,4 @@
-const hygeineFlow = ['Brush & floss', 'Face wash & moistuizer', 'Sunscreen'];
+const hygeineFlow = ['Brush & floss', 'Face wash & moisturizer', 'Sunscreen'];
 const morning = [
   'Shower',
   ...hygeineFlow,
