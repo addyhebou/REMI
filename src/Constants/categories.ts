@@ -2,6 +2,6 @@ export const categories = [
   'Content Creator',
   'Super Producer',
   'CEO',
-  'Singer',
+  'Recording Artist',
   'Property Mogul',
 ];

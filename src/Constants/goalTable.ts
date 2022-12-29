@@ -15,9 +15,11 @@ const contentCreatorGoals: Goals = {
     ],
   },
 };
+
 const CEOGoals: Goals = {
   OKRs: { 'Earn $10,000': [] },
 };
+
 const superProducerGoals: Goals = {
   OKRs: {
     '100+ projects': [
@@ -28,11 +30,33 @@ const superProducerGoals: Goals = {
     'Produce for 5+ Major Artists': [],
   },
 };
-const singerGoals: Goals = {
-  OKRs: { 'Vocal lessons': [] },
+
+const recordingArtistGoals: Goals = {
+  OKRs: {
+    'Private Vocal lessons': [
+      'Find strong, highly educated teacher',
+      'Hyper focus on tone',
+      'Sing for an hour daily',
+      'Invest in soundproofing studio for at-home practice',
+      'Look for practice rooms in music schools',
+      'Copy 4-6 of your favorite singers: The Weeknd, Justin Bieber, Bryson Tiller, Frank Ocean, Drake, The Kid Laroi',
+      'Memorize practice material',
+      'Experiment with different voices each fav singer uses to build your arsenal',
+    ],
+  },
 };
+
 const propertyMogulGoals: Goals = {
-  OKRs: { 'Rent or AirBnB a Quadplex': [] },
+  OKRs: {
+    'Rent or AirBnB a Quadplex in LA': [
+      'Setup with NACA',
+      'Look up 5 properties per week: Zillow, Realtor, Trulia, Foreclosure, Apartments',
+      "Find a good real estate agent if you can't find a property by March",
+      'Do tours in neighborhoods',
+      'Look toward college areas – Westwood (UCLA), South Central (USC)',
+      'Browse on FB groups and Craigslist',
+    ],
+  },
 };
 
 export const goalTable = {
@@ -40,5 +64,5 @@ export const goalTable = {
   'Super Producer': { goals: superProducerGoals, color: '#F5C293' },
   'Content Creator': { goals: contentCreatorGoals, color: '#FBEC9D' },
   'Property Mogul': { goals: propertyMogulGoals, color: '#C0EFAF' },
-  Singer: { goals: singerGoals, color: '#FECFF4' },
+  'Recording Artist': { goals: recordingArtistGoals, color: '#FECFF4' },
 };

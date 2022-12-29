@@ -7,7 +7,7 @@ export function TitleCard(props: {
   setSelectedGoal?: React.Dispatch<React.SetStateAction<string>>;
 }) {
   const { category, setSelectedGoal } = props;
-  const getColor = (): string => (goalTable as any)[category].color;
+  const getColor = (): string => (goalTable as any)[category]?.color;
   return (
     <h2
       className="Title"
