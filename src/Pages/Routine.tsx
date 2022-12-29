@@ -4,9 +4,11 @@ import '../Styles/Routine.scss';
 import { getRoutine } from '../Services/getRoutine';
 
 export default function Routine() {
-  const isDay = true;
-  const routine = isDay ? getRoutine('morning') : getRoutine('evening');
-  let [num, setNum] = useState(0);
+  const isDay: boolean = true;
+  const routine: string[] = isDay
+    ? getRoutine('morning')
+    : getRoutine('evening');
+  let [num, setNum] = useState<number>(0);
   const [highlighted, setHighlighted] = useState<string>(routine[num]);
 
   useEffect(() => {
