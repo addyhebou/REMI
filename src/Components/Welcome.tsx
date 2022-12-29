@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { getWeather } from '../Services/getWeather.ts';
+import { getWeather } from '../Services/getWeather';
 import '../Styles/WelcomeFunc.scss';
 
 export default function WelcomeFunc() {
@@ -8,14 +8,14 @@ export default function WelcomeFunc() {
     async function fetchWeather() {
       try {
         const vals = getWeather();
-        setCity(vals[0]);
-        setRegion(vals[1]);
-        setTemp(vals[2]);
-        setCondition(vals[3]);
-        setIcon(vals[4]);
-        setFeel(vals[5]);
-        setTimeOfDay(vals[6]);
-        setMessage(vals[7]);
+        setCity((vals as any)[0]);
+        setRegion((vals as any)[1]);
+        setTemp((vals as any)[2]);
+        setCondition((vals as any)[3]);
+        setIcon((vals as any)[4]);
+        setFeel((vals as any)[5]);
+        setTimeOfDay((vals as any)[6]);
+        setMessage((vals as any)[7]);
       } catch (e) {
         console.log(e);
       }
