@@ -7,7 +7,7 @@ const morning = [
 ];
 const evening = hygeineFlow;
 
-export const getRoutine = (timeOfDay) => {
+export const getRoutine = (timeOfDay: string) => {
   if (timeOfDay.toLowerCase() === 'evening') return evening;
   return morning;
 };
