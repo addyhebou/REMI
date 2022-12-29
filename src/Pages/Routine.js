@@ -16,7 +16,6 @@ export default function Routine() {
 
   return (
     <div>
-      <NavbarIcons />
       <h1>Routine</h1>
       <div className="main">
         <div>
