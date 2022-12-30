@@ -9,7 +9,7 @@ export default function CraftCard(props: Exercise) {
       <div>
         <p>{props.description}</p>
       </div>
-      <strong>{props.activityLevel}</strong>
+      <strong>Activity level: {props.activityLevel}</strong>
     </div>
   );
 }

@@ -28,7 +28,8 @@ const sampleMaking: Exercise = {
 const remakes: Exercise = {
   title: 'Remake Top Songs',
   description: 'Remaking favorite and hit songs',
-  imageURL: '',
+  imageURL:
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Toicon-icon-fandom-build.svg/1200px-Toicon-icon-fandom-build.svg.png',
   impact: 'Increases diversity',
   activityLevel: 8,
 };
@@ -63,7 +64,8 @@ const liveStreams: Exercise = {
 const mentee: Exercise = {
   title: 'Mentee',
   description: 'Mentee under a top producer',
-  imageURL: '',
+  imageURL:
+    'https://iconarchive.com/download/i108932/google/noto-emoji-people-profession/10210-man-student-medium-dark-skin-tone.ico',
   impact:
     'Learn the style of a top producer, work in circles with top creatives',
   activityLevel: 6,
