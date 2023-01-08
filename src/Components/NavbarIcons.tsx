@@ -3,6 +3,7 @@ import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import '../Styles/App.scss';
 import '../Styles/NavbarIcons.scss';
 import { Brush, Home, ShoppingCart } from '@material-ui/icons';
+import { DryCleaning } from '@mui/icons-material';
 
 export default function NavbarIcons(props: {
   setPage: React.Dispatch<React.SetStateAction<string>>;
@@ -22,6 +23,9 @@ export default function NavbarIcons(props: {
         </div>
         <div onClick={() => setPage('craft')}>
           <Brush />
+        </div>
+        <div onClick={() => setPage('maintenance')}>
+          <DryCleaning />
         </div>
       </div>
     </div>

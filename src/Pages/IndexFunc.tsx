@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NavbarIcons from '../Components/NavbarIcons';
+import Maintenance from '../Components/Maintenance/Maintenance';
 import '../Styles/IndexFunc.scss';
 import Welcome from '../Components/Welcome';
 import GoalArray from '../Components/GoalArray';
@@ -14,6 +15,7 @@ export default function IndexFunc() {
     routine: <Routine />,
     shopping: <ShoppingList />,
     craft: <Craft />,
+    maintenance: <Maintenance />,
   };
   return (
     <div className="IndexFunc">
