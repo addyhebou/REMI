@@ -45,12 +45,19 @@ const WORKOUT: MaintenanceItem = {
   category: 'health',
 };
 
+const LAUNDRY: MaintenanceItem = {
+  name: 'Do laundry',
+  frequency: 'weekly',
+  category: 'cleanliness',
+};
+
 const myMaintenanceList: MaintenanceItem[] = [
   GET_HAIRCUT,
   CLEAN_BATHROOM,
   DENTAL_CHECKUP,
   WORKOUT,
   GET_GROCERIES,
+  LAUNDRY,
 ];
 export const maintenanceList: MaintenanceList = {
   maintenanceList: myMaintenanceList,

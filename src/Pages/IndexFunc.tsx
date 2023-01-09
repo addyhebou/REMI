@@ -5,8 +5,8 @@ import '../Styles/IndexFunc.scss';
 import Welcome from '../Components/Welcome';
 import GoalArray from '../Components/GoalArray';
 import Routine from './Routine';
-import ShoppingList from '../Components/ShoppingList';
 import Craft from '../Components/Craft/Craft';
+import ShoppingList from '../Components/ShoppingList/ShoppingList';
 
 export default function IndexFunc() {
   const [page, setPage] = useState<string>('home');
