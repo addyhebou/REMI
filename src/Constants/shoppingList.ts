@@ -6,4 +6,6 @@ export const shoppingList: string[] = [
   'new face razor',
   'laundry bag',
   'toothbrush',
+  'socks',
+  'underwear',
 ];
