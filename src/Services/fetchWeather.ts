@@ -9,12 +9,12 @@ export const fetchIPInformation = async () => {
 
 export const fetchWeather = async ({ queryKey }: { queryKey: any }) => {
   const [_, city] = queryKey;
-  // const response = await fetch(
-  //   `http://api.weatherapi.com/v1/forecast.json?key=${APP_KEY}&q=${city}&aqi=no`
-  // );
   const response = await fetch(
-    'https://api.weatherapi.com/v1/forecast.json?key=f33518e9773745fdafd61453220701&q=Los%20Angeles&aqi=no'
+    `http://api.weatherapi.com/v1/forecast.json?key=${APP_KEY}&q=${city}&aqi=no`
   );
+  // const response = await fetch(
+  //   'https://api.weatherapi.com/v1/forecast.json?key=f33518e9773745fdafd61453220701&q=Los%20Angeles&aqi=no'
+  // );
   if (!response.ok) throw new Error('Hey Addy, this is REMI throwing the Error');
   const json: Weather = await response.json();
   return json;

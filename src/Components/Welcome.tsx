@@ -33,8 +33,7 @@ export default function WelcomeFunc() {
   );
 
   useEffect(() => {
-    console.log(weatherData)
-  }, [weatherData]);
+  }, []);
 
   return (
     <div className="welcome">
