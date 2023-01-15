@@ -2,41 +2,45 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { getWeather } from '../Services/getWeather';
 import '../Styles/WelcomeFunc.scss';
+import {
+  fetchIPInformation,
+  fetchWeather,
+  getMessage,
+  getTimeOfDay,
+} from '../Services/fetchWeather';
+import { useQuery } from '@tanstack/react-query';
 
 export default function WelcomeFunc() {
-  useEffect(() => {
-    async function fetchWeather() {
-      try {
-        const vals = getWeather();
-        setCity((vals as any)[0]);
-        setRegion((vals as any)[1]);
-        setTemp((vals as any)[2]);
-        setCondition((vals as any)[3]);
-        setIcon((vals as any)[4]);
-        setFeel((vals as any)[5]);
-        setTimeOfDay((vals as any)[6]);
-        setMessage((vals as any)[7]);
-      } catch (e) {
-        console.log(e);
-      }
-    }
-    fetchWeather();
-  }, []);
+  const { data: IPData } = useQuery(['IPData'], fetchIPInformation);
+  const [city, setCity] = useState<string>(IPData?.city || '');
+  const [region, setRegion] = useState<string>(IPData?.region || '');
 
-  const [temp, setTemp] = useState<string>('');
-  const [feel, setFeel] = useState<string>('');
-  const [condition, setCondition] = useState<string>('');
-  const [icon, setIcon] = useState<string>('');
-  const [timeOfDay, setTimeOfDay] = useState<string>('day');
-  const [city, setCity] = useState<string>('');
-  const [region, setRegion] = useState<string>('');
-  const [message, setMessage] = useState<string>('');
+  const { data: weatherData } = useQuery(['Weather_Data', city], fetchWeather);
+  const [temp, setTemp] = useState<number>(weatherData?.current.temp_f || 0);
+  const [message, setMessage] = useState<string>(getMessage(temp));
+  const [feel, setFeel] = useState<number>(
+    weatherData?.current.feelslike_f || 0
+  );
+  const [condition, setCondition] = useState<string>(
+    weatherData?.current.condition.text || ''
+  );
+  const [icon, setIcon] = useState<string>(
+    weatherData?.current.condition.icon || ''
+  );
+
+  const [timeOfDay, setTimeOfDay] = useState<string>(
+    getTimeOfDay(weatherData?.location.localtime) || 'day'
+  );
+
+  useEffect(() => {
+    console.log(weatherData)
+  }, [weatherData]);
 
   return (
     <div className="welcome">
       <h1 className="REMITitle">R.E.M.I</h1>
       <h1>Good {timeOfDay}, Addy.</h1>
-      {temp ? (
+      {weatherData ? (
         <>
           <p>
             The weather in {city}, {region} is currently {temp}º, but it feels
