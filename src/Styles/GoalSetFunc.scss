@@ -4,7 +4,6 @@ Link {
 }
 
 .GoalSet {
-  transition: all 0.125s;
   &:hover {
     transform: scale(1.2);
     cursor: pointer;
@@ -12,11 +11,21 @@ Link {
 }
 
 .Title {
-  cursor: pointer;
-  transition: all 0.125s;
-
   &:hover {
     transform: scale(1.2);
     cursor: pointer;
+  }
+
+  border-radius: 15px;
+  margin: 15px 40px;
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .GoalSet {
+    .GoalCartoon {
+      display: none;
+    }
   }
 }

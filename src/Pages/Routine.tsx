@@ -16,15 +16,15 @@ export default function Routine() {
   }, [num, routine]);
 
   return (
-    <div>
+    <div className="Routine">
       <h1>Routine</h1>
       <div className="main">
-        <>
+        <div className="RoutineSideImage">
           <caption>Where image will be</caption>
           <h2>
             <strong>{highlighted}</strong>
           </h2>
-        </>
+        </div>
         <div>
           <ul className="routineContainer">
             {routine.map((step, index) => {

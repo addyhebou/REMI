@@ -1,10 +1,45 @@
+@media only screen and (max-width: 768px) {
+  .goalArray {
+    .goalRow {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .ObjectiveContainer {
+    .GoalCartoon {
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 769px) {
+  .goalArray {
+    .goalRow {
+      display: flex;
+      flex-direction: row;
+    }
+    .ObjectiveContainer {
+      display: 'flex';
+      flex-direction: 'row';
+      justify-content: 'space-evenly';
+      align-items: 'center';
+      margin: '60px auto';
+
+      .KeyObjectives {
+        ul {
+          background-color: 'white';
+          border-radius: '2px';
+          border-color: '2px solid black';
+          box-shadow: '13px 16px 29px rgba(63, 63, 63, 0.2)';
+          list-style: 'none';
+          text-align: 'left';
+        }
+      }
+    }
+  }
+}
+
 .goalArray {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
-  .goalRow {
-    display: flex;
-    flex-direction: row;
-  }
 }

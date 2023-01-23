@@ -39,7 +39,10 @@ export default function GoalSetFunc(prop: {
         onClick={() => setSelectedGoal(category)}
       >
         <TitleCard category={category} />
-        <div>Image</div>
+        <img
+          className="GoalCartoon"
+          alt={`Cartoon image depicting my ${category} goal`}
+        />
       </div>
     </div>
   );

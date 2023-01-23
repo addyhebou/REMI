@@ -12,7 +12,7 @@ export interface MaintenanceItem {
     | 'monthly'
     | 'every 6 months'
     | 'yearly';
-  category: 'looks' | 'cleanliness' | 'health' | 'groceries';
+  category: 'looks' | 'cleanliness' | 'health' | 'groceries' | 'car';
 }
 
 const GET_HAIRCUT: MaintenanceItem = {
@@ -51,6 +51,12 @@ const LAUNDRY: MaintenanceItem = {
   category: 'cleanliness',
 };
 
+const CAR_CHECKUP: MaintenanceItem = {
+  name: 'Car checkup',
+  frequency: 'monthly',
+  category: 'car',
+};
+
 const myMaintenanceList: MaintenanceItem[] = [
   GET_HAIRCUT,
   CLEAN_BATHROOM,
@@ -58,6 +64,7 @@ const myMaintenanceList: MaintenanceItem[] = [
   WORKOUT,
   GET_GROCERIES,
   LAUNDRY,
+  CAR_CHECKUP,
 ];
 export const maintenanceList: MaintenanceList = {
   maintenanceList: myMaintenanceList,

@@ -1,31 +1,39 @@
+@media only screen and (max-width: 768px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .Weather {
+      p {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 29px;
+        color: #000000;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .welcome {
+    .Weather {
+      display: none;
+    }
+  }
+}
+
+// General CSS rules
 .welcome {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-
-  p {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 29px;
-    color: #000000;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 48px;
-    line-height: 57px;
-
-    color: #000000;
-    margin: 0 auto;
-  }
-
   .REMITitle {
-    font-size: 96px;
-    line-height: 115px;
+    font-family: 'SF Pro Display';
+    font-weight: 100;
+    font-size: 64px;
+    font-style: normal;
+    color: #000000;
+    margin: 0 auto;
+    line-height: 57px;
   }
 }

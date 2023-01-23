@@ -35,23 +35,25 @@ export default function WelcomeFunc() {
   return (
     <div className="welcome">
       <h1 className="REMITitle">R.E.M.I</h1>
-      <h1>Good {timeOfDay}, Addy.</h1>
-      {temp ? (
-        <>
+      <h2>Good {timeOfDay}, Addy.</h2>
+      <div className="Weather">
+        {temp ? (
+          <>
+            <p>
+              The weather in {city}, {region} is currently {temp}º, but it feels
+              like {feel}º.
+            </p>
+            <p> The condition is {condition}. </p>
+            <p>{message}</p>
+            <img src={icon} alt="Weather icon" />
+          </>
+        ) : (
           <p>
-            The weather in {city}, {region} is currently {temp}º, but it feels
-            like {feel}º.
+            No information on the weather & your to-do list right now... might
+            wanna check your Internet...
           </p>
-          <p> The condition is {condition}. </p>
-          <p>{message}</p>
-          <img src={icon} alt="Weather icon" />
-        </>
-      ) : (
-        <p>
-          No information on the weather & your to-do list right now... might
-          wanna check your Internet...
-        </p>
-      )}
+        )}
+      </div>
     </div>
   );
 }

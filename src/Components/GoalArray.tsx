@@ -31,28 +31,11 @@ export default function GoalArray() {
             setSelectedGoal={setSelectedGoal}
           />
           <div>
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-evenly',
-                alignItems: 'center',
-                margin: '60px auto',
-              }}
-            >
-              <img alt="image" />
-              <div>
+            <div className="ObjectiveContainer">
+              <img className="GoalCartoon" alt="image" />
+              <div className="KeyObjectives">
                 <h2>Key Objectives</h2>
-                <ul
-                  style={{
-                    backgroundColor: 'white',
-                    borderRadius: '2px',
-                    borderColor: '2px solid black',
-                    boxShadow: '13px 16px 29px rgba(63, 63, 63, 0.2)',
-                    listStyle: 'none',
-                    textAlign: 'left',
-                  }}
-                >
+                <ul>
                   {Object.keys((goalTable as any)[selectedGoal].goals.OKRs).map(
                     (goal: string) => {
                       const steps = (goalTable as any)[selectedGoal].goals.OKRs[

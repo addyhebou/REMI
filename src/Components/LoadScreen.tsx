@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/App.scss';
+import '../Styles/LoadScreen.scss';
 
 export default function LoadScreen() {
   return (

@@ -1,11 +1,18 @@
+@media only screen and (max-width: 768px) {
+  .RoutineSideImage {
+    display: none;
+  }
+}
+
 .routineContainer {
   list-style: none;
+  margin-block: 0em;
+  margin-inline: 0em;
   .routineStep {
     padding: 20px;
     border-radius: 10px;
     background-color: rgb(255, 205, 176);
-    margin: 1vh 0vw;
-    transition: all 0.375s;
+    margin: 0.5em 0em;
 
     &:hover {
       transform: scale(1.1);

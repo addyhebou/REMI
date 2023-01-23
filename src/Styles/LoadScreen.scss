@@ -1,0 +1,25 @@
+.Loader {
+  animation-iteration-count: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .Caption {
+    font-weight: lighter;
+    font-size: small;
+    font-style: italic;
+  }
+
+  h1 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 57px;
+
+    color: #000000;
+    margin: 0 auto;
+  }
+}
