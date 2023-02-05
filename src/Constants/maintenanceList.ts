@@ -2,58 +2,70 @@ export interface MaintenanceList {
   maintenanceList: MaintenanceItem[];
 }
 
+export enum MaintenanceFrequency {
+  DAILY = 0,
+  TWICE_WEEKLY = 1,
+  WEEKLY = 2,
+  BIWEEKLY = 3,
+  MONTHLY = 4,
+  HALF_YEAR = 5,
+  YEARLY = 6,
+}
+export const MaintenanceFrequencyMap = {
+  0: 'daily',
+  1: 'twice a week',
+  2: 'weekly',
+  3: 'biweekly',
+  4: 'monthly',
+  5: 'every 6 months',
+  6: 'yearly',
+};
+
 export interface MaintenanceItem {
   name: string;
-  frequency:
-    | 'daily'
-    | 'twice a week'
-    | 'weekly'
-    | 'biweekly'
-    | 'monthly'
-    | 'every 6 months'
-    | 'yearly';
+  frequency: number;
   category: 'looks' | 'cleanliness' | 'health' | 'groceries' | 'car';
 }
 
 const GET_HAIRCUT: MaintenanceItem = {
   name: 'Get haricut and beard',
-  frequency: 'biweekly',
+  frequency: MaintenanceFrequency.BIWEEKLY,
   category: 'looks',
 };
 
 const GET_GROCERIES: MaintenanceItem = {
   name: 'Get food groceries',
-  frequency: 'weekly',
+  frequency: MaintenanceFrequency.WEEKLY,
   category: 'groceries',
 };
 
 const CLEAN_BATHROOM: MaintenanceItem = {
   name: 'Clean bathroom',
-  frequency: 'weekly',
+  frequency: MaintenanceFrequency.WEEKLY,
   category: 'cleanliness',
 };
 
 const DENTAL_CHECKUP: MaintenanceItem = {
   name: 'Get dental checkup',
-  frequency: 'every 6 months',
+  frequency: MaintenanceFrequency.HALF_YEAR,
   category: 'health',
 };
 
 const WORKOUT: MaintenanceItem = {
   name: 'Work out',
-  frequency: 'daily',
+  frequency: MaintenanceFrequency.DAILY,
   category: 'health',
 };
 
 const LAUNDRY: MaintenanceItem = {
   name: 'Do laundry',
-  frequency: 'weekly',
+  frequency: MaintenanceFrequency.WEEKLY,
   category: 'cleanliness',
 };
 
 const CAR_CHECKUP: MaintenanceItem = {
   name: 'Car checkup',
-  frequency: 'monthly',
+  frequency: MaintenanceFrequency.MONTHLY,
   category: 'car',
 };
 
